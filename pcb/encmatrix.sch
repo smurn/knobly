@@ -1,0 +1,1006 @@
+EESchema Schematic File Version 2
+LIBS:knobly-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:pic18f4550_tqfp
+LIBS:switch-enc
+LIBS:encoder
+LIBS:knobly-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title "Rotary Encoder Matrix"
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Concentric SWE00
+U 1 1 57647548
+P 2200 3100
+F 0 "SWE00" H 2200 2850 60  0000 C CNN
+F 1 "Concentric" H 2200 2925 60  0000 C CNN
+F 2 "mystuff:e37" H 2200 3075 60  0001 C CNN
+F 3 "" H 2200 3075 60  0000 C CNN
+	1    2200 3100
+	-1   0    0    1   
+$EndComp
+$Comp
+L D_Small DE01
+U 1 1 5764754E
+P 2450 3100
+F 0 "DE01" H 2400 3180 50  0000 L CNN
+F 1 "D_Small" H 2300 3020 50  0000 L CNN
+F 2 "Diodes_SMD:SOD-123" V 2450 3100 50  0001 C CNN
+F 3 "" V 2450 3100 50  0000 C CNN
+	1    2450 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_Small DE00
+U 1 1 57647554
+P 1950 3100
+F 0 "DE00" H 1900 3180 50  0000 L CNN
+F 1 "D_Small" H 1800 3020 50  0000 L CNN
+F 2 "Diodes_SMD:SOD-123" V 1950 3100 50  0001 C CNN
+F 3 "" V 1950 3100 50  0000 C CNN
+	1    1950 3100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L D_Small DE03
+U 1 1 5764CEC3
+P 3550 3100
+F 0 "DE03" H 3500 3180 50  0000 L CNN
+F 1 "D_Small" H 3400 3020 50  0000 L CNN
+F 2 "Diodes_SMD:SOD-123" V 3550 3100 50  0001 C CNN
+F 3 "" V 3550 3100 50  0000 C CNN
+	1    3550 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_Small DE02
+U 1 1 5764CEC9
+P 3050 3100
+F 0 "DE02" H 3000 3180 50  0000 L CNN
+F 1 "D_Small" H 2900 3020 50  0000 L CNN
+F 2 "Diodes_SMD:SOD-123" V 3050 3100 50  0001 C CNN
+F 3 "" V 3050 3100 50  0000 C CNN
+	1    3050 3100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Concentric SWE04
+U 1 1 5764D021
+P 4400 3100
+F 0 "SWE04" H 4400 2850 60  0000 C CNN
+F 1 "Concentric" H 4400 2925 60  0000 C CNN
+F 2 "mystuff:e37" H 4400 3075 60  0001 C CNN
+F 3 "" H 4400 3075 60  0000 C CNN
+	1    4400 3100
+	-1   0    0    1   
+$EndComp
+$Comp
+L D_Small DE05
+U 1 1 5764D027
+P 4650 3100
+F 0 "DE05" H 4600 3180 50  0000 L CNN
+F 1 "D_Small" H 4500 3020 50  0000 L CNN
+F 2 "Diodes_SMD:SOD-123" V 4650 3100 50  0001 C CNN
+F 3 "" V 4650 3100 50  0000 C CNN
+	1    4650 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_Small DE04
+U 1 1 5764D02D
+P 4150 3100
+F 0 "DE04" H 4100 3180 50  0000 L CNN
+F 1 "D_Small" H 4000 3020 50  0000 L CNN
+F 2 "Diodes_SMD:SOD-123" V 4150 3100 50  0001 C CNN
+F 3 "" V 4150 3100 50  0000 C CNN
+	1    4150 3100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L D_Small DE07
+U 1 1 5764D041
+P 5750 3100
+F 0 "DE07" H 5700 3180 50  0000 L CNN
+F 1 "D_Small" H 5600 3020 50  0000 L CNN
+F 2 "Diodes_SMD:SOD-123" V 5750 3100 50  0001 C CNN
+F 3 "" V 5750 3100 50  0000 C CNN
+	1    5750 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_Small DE06
+U 1 1 5764D047
+P 5250 3100
+F 0 "DE06" H 5200 3180 50  0000 L CNN
+F 1 "D_Small" H 5100 3020 50  0000 L CNN
+F 2 "Diodes_SMD:SOD-123" V 5250 3100 50  0001 C CNN
+F 3 "" V 5250 3100 50  0000 C CNN
+	1    5250 3100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Concentric SWE08
+U 1 1 5764D469
+P 6600 3100
+F 0 "SWE08" H 6600 2850 60  0000 C CNN
+F 1 "Concentric" H 6600 2925 60  0000 C CNN
+F 2 "mystuff:e37" H 6600 3075 60  0001 C CNN
+F 3 "" H 6600 3075 60  0000 C CNN
+	1    6600 3100
+	-1   0    0    1   
+$EndComp
+$Comp
+L D_Small DE09
+U 1 1 5764D46F
+P 6850 3100
+F 0 "DE09" H 6800 3180 50  0000 L CNN
+F 1 "D_Small" H 6700 3020 50  0000 L CNN
+F 2 "Diodes_SMD:SOD-123" V 6850 3100 50  0001 C CNN
+F 3 "" V 6850 3100 50  0000 C CNN
+	1    6850 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_Small DE08
+U 1 1 5764D475
+P 6350 3100
+F 0 "DE08" H 6300 3180 50  0000 L CNN
+F 1 "D_Small" H 6200 3020 50  0000 L CNN
+F 2 "Diodes_SMD:SOD-123" V 6350 3100 50  0001 C CNN
+F 3 "" V 6350 3100 50  0000 C CNN
+	1    6350 3100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L D_Small DE011
+U 1 1 5764D489
+P 7950 3100
+F 0 "DE011" H 7900 3180 50  0000 L CNN
+F 1 "D_Small" H 7800 3020 50  0000 L CNN
+F 2 "Diodes_SMD:SOD-123" V 7950 3100 50  0001 C CNN
+F 3 "" V 7950 3100 50  0000 C CNN
+	1    7950 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_Small DE010
+U 1 1 5764D48F
+P 7450 3100
+F 0 "DE010" H 7400 3180 50  0000 L CNN
+F 1 "D_Small" H 7300 3020 50  0000 L CNN
+F 2 "Diodes_SMD:SOD-123" V 7450 3100 50  0001 C CNN
+F 3 "" V 7450 3100 50  0000 C CNN
+	1    7450 3100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Concentric SWE012
+U 1 1 5764D49D
+P 8800 3100
+F 0 "SWE012" H 8800 2850 60  0000 C CNN
+F 1 "Concentric" H 8800 2925 60  0000 C CNN
+F 2 "mystuff:e37" H 8800 3075 60  0001 C CNN
+F 3 "" H 8800 3075 60  0000 C CNN
+	1    8800 3100
+	-1   0    0    1   
+$EndComp
+$Comp
+L D_Small DE013
+U 1 1 5764D4A3
+P 9050 3100
+F 0 "DE013" H 9000 3180 50  0000 L CNN
+F 1 "D_Small" H 8900 3020 50  0000 L CNN
+F 2 "Diodes_SMD:SOD-123" V 9050 3100 50  0001 C CNN
+F 3 "" V 9050 3100 50  0000 C CNN
+	1    9050 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_Small DE012
+U 1 1 5764D4A9
+P 8550 3100
+F 0 "DE012" H 8500 3180 50  0000 L CNN
+F 1 "D_Small" H 8400 3020 50  0000 L CNN
+F 2 "Diodes_SMD:SOD-123" V 8550 3100 50  0001 C CNN
+F 3 "" V 8550 3100 50  0000 C CNN
+	1    8550 3100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L D_Small DE015
+U 1 1 5764D4BD
+P 10150 3100
+F 0 "DE015" H 10100 3180 50  0000 L CNN
+F 1 "D_Small" H 10000 3020 50  0000 L CNN
+F 2 "Diodes_SMD:SOD-123" V 10150 3100 50  0001 C CNN
+F 3 "" V 10150 3100 50  0000 C CNN
+	1    10150 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_Small DE014
+U 1 1 5764D4C3
+P 9650 3100
+F 0 "DE014" H 9600 3180 50  0000 L CNN
+F 1 "D_Small" H 9500 3020 50  0000 L CNN
+F 2 "Diodes_SMD:SOD-123" V 9650 3100 50  0001 C CNN
+F 3 "" V 9650 3100 50  0000 C CNN
+	1    9650 3100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L D_Small DE11
+U 1 1 5764D987
+P 2450 3600
+F 0 "DE11" H 2400 3680 50  0000 L CNN
+F 1 "D_Small" H 2300 3520 50  0000 L CNN
+F 2 "Diodes_SMD:SOD-123" V 2450 3600 50  0001 C CNN
+F 3 "" V 2450 3600 50  0000 C CNN
+	1    2450 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_Small DE10
+U 1 1 5764D98D
+P 1950 3600
+F 0 "DE10" H 1900 3680 50  0000 L CNN
+F 1 "D_Small" H 1800 3520 50  0000 L CNN
+F 2 "Diodes_SMD:SOD-123" V 1950 3600 50  0001 C CNN
+F 3 "" V 1950 3600 50  0000 C CNN
+	1    1950 3600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L D_Small DE13
+U 1 1 5764D9A1
+P 3550 3600
+F 0 "DE13" H 3500 3680 50  0000 L CNN
+F 1 "D_Small" H 3400 3520 50  0000 L CNN
+F 2 "Diodes_SMD:SOD-123" V 3550 3600 50  0001 C CNN
+F 3 "" V 3550 3600 50  0000 C CNN
+	1    3550 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_Small DE12
+U 1 1 5764D9A7
+P 3050 3600
+F 0 "DE12" H 3000 3680 50  0000 L CNN
+F 1 "D_Small" H 2900 3520 50  0000 L CNN
+F 2 "Diodes_SMD:SOD-123" V 3050 3600 50  0001 C CNN
+F 3 "" V 3050 3600 50  0000 C CNN
+	1    3050 3600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L D_Small DE15
+U 1 1 5764D9BB
+P 4650 3600
+F 0 "DE15" H 4600 3680 50  0000 L CNN
+F 1 "D_Small" H 4500 3520 50  0000 L CNN
+F 2 "Diodes_SMD:SOD-123" V 4650 3600 50  0001 C CNN
+F 3 "" V 4650 3600 50  0000 C CNN
+	1    4650 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_Small DE14
+U 1 1 5764D9C1
+P 4150 3600
+F 0 "DE14" H 4100 3680 50  0000 L CNN
+F 1 "D_Small" H 4000 3520 50  0000 L CNN
+F 2 "Diodes_SMD:SOD-123" V 4150 3600 50  0001 C CNN
+F 3 "" V 4150 3600 50  0000 C CNN
+	1    4150 3600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L D_Small DE17
+U 1 1 5764D9D5
+P 5750 3600
+F 0 "DE17" H 5700 3680 50  0000 L CNN
+F 1 "D_Small" H 5600 3520 50  0000 L CNN
+F 2 "Diodes_SMD:SOD-123" V 5750 3600 50  0001 C CNN
+F 3 "" V 5750 3600 50  0000 C CNN
+	1    5750 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_Small DE16
+U 1 1 5764D9DB
+P 5250 3600
+F 0 "DE16" H 5200 3680 50  0000 L CNN
+F 1 "D_Small" H 5100 3520 50  0000 L CNN
+F 2 "Diodes_SMD:SOD-123" V 5250 3600 50  0001 C CNN
+F 3 "" V 5250 3600 50  0000 C CNN
+	1    5250 3600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Concentric SWE18
+U 1 1 5764D9E9
+P 6600 3600
+F 0 "SWE18" H 6600 3350 60  0000 C CNN
+F 1 "Concentric" H 6600 3425 60  0000 C CNN
+F 2 "mystuff:e37" H 6600 3575 60  0001 C CNN
+F 3 "" H 6600 3575 60  0000 C CNN
+	1    6600 3600
+	-1   0    0    1   
+$EndComp
+$Comp
+L D_Small DE19
+U 1 1 5764D9EF
+P 6850 3600
+F 0 "DE19" H 6800 3680 50  0000 L CNN
+F 1 "D_Small" H 6700 3520 50  0000 L CNN
+F 2 "Diodes_SMD:SOD-123" V 6850 3600 50  0001 C CNN
+F 3 "" V 6850 3600 50  0000 C CNN
+	1    6850 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_Small DE18
+U 1 1 5764D9F5
+P 6350 3600
+F 0 "DE18" H 6300 3680 50  0000 L CNN
+F 1 "D_Small" H 6200 3520 50  0000 L CNN
+F 2 "Diodes_SMD:SOD-123" V 6350 3600 50  0001 C CNN
+F 3 "" V 6350 3600 50  0000 C CNN
+	1    6350 3600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L D_Small DE111
+U 1 1 5764DA09
+P 7950 3600
+F 0 "DE111" H 7900 3680 50  0000 L CNN
+F 1 "D_Small" H 7800 3520 50  0000 L CNN
+F 2 "Diodes_SMD:SOD-123" V 7950 3600 50  0001 C CNN
+F 3 "" V 7950 3600 50  0000 C CNN
+	1    7950 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_Small DE110
+U 1 1 5764DA0F
+P 7450 3600
+F 0 "DE110" H 7400 3680 50  0000 L CNN
+F 1 "D_Small" H 7300 3520 50  0000 L CNN
+F 2 "Diodes_SMD:SOD-123" V 7450 3600 50  0001 C CNN
+F 3 "" V 7450 3600 50  0000 C CNN
+	1    7450 3600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L D_Small DE21
+U 1 1 5764DE2F
+P 2450 4100
+F 0 "DE21" H 2400 4180 50  0000 L CNN
+F 1 "D_Small" H 2300 4020 50  0000 L CNN
+F 2 "Diodes_SMD:SOD-123" V 2450 4100 50  0001 C CNN
+F 3 "" V 2450 4100 50  0000 C CNN
+	1    2450 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_Small DE20
+U 1 1 5764DE35
+P 1950 4100
+F 0 "DE20" H 1900 4180 50  0000 L CNN
+F 1 "D_Small" H 1800 4020 50  0000 L CNN
+F 2 "Diodes_SMD:SOD-123" V 1950 4100 50  0001 C CNN
+F 3 "" V 1950 4100 50  0000 C CNN
+	1    1950 4100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L D_Small DE23
+U 1 1 5764DE49
+P 3550 4100
+F 0 "DE23" H 3500 4180 50  0000 L CNN
+F 1 "D_Small" H 3400 4020 50  0000 L CNN
+F 2 "Diodes_SMD:SOD-123" V 3550 4100 50  0001 C CNN
+F 3 "" V 3550 4100 50  0000 C CNN
+	1    3550 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_Small DE22
+U 1 1 5764DE4F
+P 3050 4100
+F 0 "DE22" H 3000 4180 50  0000 L CNN
+F 1 "D_Small" H 2900 4020 50  0000 L CNN
+F 2 "Diodes_SMD:SOD-123" V 3050 4100 50  0001 C CNN
+F 3 "" V 3050 4100 50  0000 C CNN
+	1    3050 4100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L D_Small DE25
+U 1 1 5764DE63
+P 4650 4100
+F 0 "DE25" H 4600 4180 50  0000 L CNN
+F 1 "D_Small" H 4500 4020 50  0000 L CNN
+F 2 "Diodes_SMD:SOD-123" V 4650 4100 50  0001 C CNN
+F 3 "" V 4650 4100 50  0000 C CNN
+	1    4650 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_Small DE24
+U 1 1 5764DE69
+P 4150 4100
+F 0 "DE24" H 4100 4180 50  0000 L CNN
+F 1 "D_Small" H 4000 4020 50  0000 L CNN
+F 2 "Diodes_SMD:SOD-123" V 4150 4100 50  0001 C CNN
+F 3 "" V 4150 4100 50  0000 C CNN
+	1    4150 4100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L D_Small DE27
+U 1 1 5764DE7D
+P 5750 4100
+F 0 "DE27" H 5700 4180 50  0000 L CNN
+F 1 "D_Small" H 5600 4020 50  0000 L CNN
+F 2 "Diodes_SMD:SOD-123" V 5750 4100 50  0001 C CNN
+F 3 "" V 5750 4100 50  0000 C CNN
+	1    5750 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_Small DE26
+U 1 1 5764DE83
+P 5250 4100
+F 0 "DE26" H 5200 4180 50  0000 L CNN
+F 1 "D_Small" H 5100 4020 50  0000 L CNN
+F 2 "Diodes_SMD:SOD-123" V 5250 4100 50  0001 C CNN
+F 3 "" V 5250 4100 50  0000 C CNN
+	1    5250 4100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L D_Small DE29
+U 1 1 5764DE97
+P 6850 4100
+F 0 "DE29" H 6800 4180 50  0000 L CNN
+F 1 "D_Small" H 6700 4020 50  0000 L CNN
+F 2 "Diodes_SMD:SOD-123" V 6850 4100 50  0001 C CNN
+F 3 "" V 6850 4100 50  0000 C CNN
+	1    6850 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_Small DE28
+U 1 1 5764DE9D
+P 6350 4100
+F 0 "DE28" H 6300 4180 50  0000 L CNN
+F 1 "D_Small" H 6200 4020 50  0000 L CNN
+F 2 "Diodes_SMD:SOD-123" V 6350 4100 50  0001 C CNN
+F 3 "" V 6350 4100 50  0000 C CNN
+	1    6350 4100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L D_Small DE211
+U 1 1 5764DEB1
+P 7950 4100
+F 0 "DE211" H 7900 4180 50  0000 L CNN
+F 1 "D_Small" H 7800 4020 50  0000 L CNN
+F 2 "Diodes_SMD:SOD-123" V 7950 4100 50  0001 C CNN
+F 3 "" V 7950 4100 50  0000 C CNN
+	1    7950 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_Small DE210
+U 1 1 5764DEB7
+P 7450 4100
+F 0 "DE210" H 7400 4180 50  0000 L CNN
+F 1 "D_Small" H 7300 4020 50  0000 L CNN
+F 2 "Diodes_SMD:SOD-123" V 7450 4100 50  0001 C CNN
+F 3 "" V 7450 4100 50  0000 C CNN
+	1    7450 4100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L D_Small DE213
+U 1 1 5764DECB
+P 9050 4100
+F 0 "DE213" H 9000 4180 50  0000 L CNN
+F 1 "D_Small" H 8900 4020 50  0000 L CNN
+F 2 "Diodes_SMD:SOD-123" V 9050 4100 50  0001 C CNN
+F 3 "" V 9050 4100 50  0000 C CNN
+	1    9050 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_Small DE212
+U 1 1 5764DED1
+P 8550 4100
+F 0 "DE212" H 8500 4180 50  0000 L CNN
+F 1 "D_Small" H 8400 4020 50  0000 L CNN
+F 2 "Diodes_SMD:SOD-123" V 8550 4100 50  0001 C CNN
+F 3 "" V 8550 4100 50  0000 C CNN
+	1    8550 4100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L D_Small DE215
+U 1 1 5764DEE5
+P 10150 4100
+F 0 "DE215" H 10100 4180 50  0000 L CNN
+F 1 "D_Small" H 10000 4020 50  0000 L CNN
+F 2 "Diodes_SMD:SOD-123" V 10150 4100 50  0001 C CNN
+F 3 "" V 10150 4100 50  0000 C CNN
+	1    10150 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_Small DE214
+U 1 1 5764DEEB
+P 9650 4100
+F 0 "DE214" H 9600 4180 50  0000 L CNN
+F 1 "D_Small" H 9500 4020 50  0000 L CNN
+F 2 "Diodes_SMD:SOD-123" V 9650 4100 50  0001 C CNN
+F 3 "" V 9650 4100 50  0000 C CNN
+	1    9650 4100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 3100 2650 3100
+Wire Wire Line
+	1750 3100 1850 3100
+Connection ~ 2200 3250
+Wire Wire Line
+	2650 2800 2650 4100
+Connection ~ 2650 3100
+Connection ~ 1750 3100
+Wire Wire Line
+	3650 3100 3750 3100
+Wire Wire Line
+	2850 3100 2950 3100
+Connection ~ 3300 3250
+Connection ~ 3750 3100
+Connection ~ 2850 3100
+Wire Wire Line
+	4750 3100 4850 3100
+Wire Wire Line
+	3950 3100 4050 3100
+Connection ~ 4400 3250
+Connection ~ 4850 3100
+Connection ~ 3950 3100
+Wire Wire Line
+	5850 3100 5950 3100
+Wire Wire Line
+	5050 3100 5150 3100
+Connection ~ 5500 3250
+Connection ~ 5950 3100
+Connection ~ 5050 3100
+Wire Wire Line
+	6950 3100 7050 3100
+Wire Wire Line
+	6150 3100 6250 3100
+Connection ~ 6600 3250
+Connection ~ 7050 3100
+Connection ~ 6150 3100
+Wire Wire Line
+	8050 3100 8150 3100
+Wire Wire Line
+	7250 3100 7350 3100
+Connection ~ 7700 3250
+Connection ~ 8150 3100
+Connection ~ 7250 3100
+Wire Wire Line
+	9150 3100 9250 3100
+Wire Wire Line
+	8350 3100 8450 3100
+Connection ~ 8800 3250
+Connection ~ 9250 3100
+Connection ~ 8350 3100
+Wire Wire Line
+	10250 3100 10350 3100
+Wire Wire Line
+	9450 3100 9550 3100
+Connection ~ 9900 3250
+Connection ~ 10350 3100
+Connection ~ 9450 3100
+Wire Wire Line
+	2550 3600 2650 3600
+Wire Wire Line
+	1750 3600 1850 3600
+Connection ~ 2200 3750
+Connection ~ 2650 3600
+Connection ~ 1750 3600
+Wire Wire Line
+	3650 3600 3750 3600
+Wire Wire Line
+	2850 3600 2950 3600
+Connection ~ 3300 3750
+Connection ~ 3750 3600
+Connection ~ 2850 3600
+Wire Wire Line
+	4750 3600 4850 3600
+Wire Wire Line
+	3950 3600 4050 3600
+Connection ~ 4400 3750
+Connection ~ 4850 3600
+Connection ~ 3950 3600
+Wire Wire Line
+	5850 3600 5950 3600
+Wire Wire Line
+	5050 3600 5150 3600
+Connection ~ 5500 3750
+Connection ~ 5950 3600
+Connection ~ 5050 3600
+Wire Wire Line
+	6950 3600 7050 3600
+Wire Wire Line
+	6150 3600 6250 3600
+Connection ~ 6600 3750
+Connection ~ 7050 3600
+Connection ~ 6150 3600
+Wire Wire Line
+	8050 3600 8150 3600
+Wire Wire Line
+	7250 3600 7350 3600
+Connection ~ 7700 3750
+Connection ~ 8150 3600
+Connection ~ 7250 3600
+Wire Wire Line
+	2650 4100 2550 4100
+Wire Wire Line
+	1750 4100 1850 4100
+Connection ~ 2200 4250
+Connection ~ 2650 4100
+Connection ~ 1750 4100
+Wire Wire Line
+	3650 4100 3750 4100
+Wire Wire Line
+	2850 4100 2950 4100
+Connection ~ 3300 4250
+Connection ~ 3750 4100
+Connection ~ 2850 4100
+Wire Wire Line
+	4750 4100 4850 4100
+Wire Wire Line
+	3950 4100 4050 4100
+Connection ~ 4400 4250
+Connection ~ 4850 4100
+Connection ~ 3950 4100
+Wire Wire Line
+	5850 4100 5950 4100
+Wire Wire Line
+	5050 4100 5150 4100
+Connection ~ 5500 4250
+Connection ~ 5950 4100
+Connection ~ 5050 4100
+Wire Wire Line
+	6950 4100 7050 4100
+Wire Wire Line
+	6150 4100 6250 4100
+Connection ~ 6600 4250
+Connection ~ 7050 4100
+Connection ~ 6150 4100
+Wire Wire Line
+	8050 4100 8150 4100
+Wire Wire Line
+	7250 4100 7350 4100
+Connection ~ 7700 4250
+Connection ~ 8150 4100
+Connection ~ 7250 4100
+Wire Wire Line
+	9150 4100 9250 4100
+Wire Wire Line
+	8350 4100 8450 4100
+Connection ~ 8800 4250
+Connection ~ 9250 4100
+Connection ~ 8350 4100
+Wire Wire Line
+	10250 4100 10350 4100
+Wire Wire Line
+	9450 4100 9550 4100
+Connection ~ 9900 4250
+Connection ~ 10350 4100
+Connection ~ 9450 4100
+Wire Wire Line
+	1750 4100 1750 2800
+Wire Wire Line
+	2850 4100 2850 2800
+Wire Wire Line
+	3750 4100 3750 2800
+Wire Wire Line
+	3950 4100 3950 2800
+Wire Wire Line
+	4850 4100 4850 2800
+Wire Wire Line
+	5050 4100 5050 2800
+Wire Wire Line
+	5950 4100 5950 2800
+Wire Wire Line
+	6150 4100 6150 2800
+Wire Wire Line
+	7050 4100 7050 2800
+Wire Wire Line
+	7250 4100 7250 2800
+Wire Wire Line
+	8150 4100 8150 2800
+Wire Wire Line
+	8350 4100 8350 2800
+Wire Wire Line
+	9250 4100 9250 2800
+Wire Wire Line
+	9450 4100 9450 2800
+Wire Wire Line
+	10350 4100 10350 2800
+Text GLabel 1750 2800 1    60   Input ~ 0
+COL0
+Text GLabel 2650 2800 1    60   Input ~ 0
+COL1
+Text GLabel 2850 2800 1    60   Input ~ 0
+COL2
+Text GLabel 3750 2800 1    60   Input ~ 0
+COL3
+Text GLabel 3950 2800 1    60   Input ~ 0
+COL4
+Text GLabel 4850 2800 1    60   Input ~ 0
+COL5
+Text GLabel 5050 2800 1    60   Input ~ 0
+COL6
+Text GLabel 5950 2800 1    60   Input ~ 0
+COL7
+Text GLabel 6150 2800 1    60   Input ~ 0
+COL8
+Text GLabel 7050 2800 1    60   Input ~ 0
+COL9
+Text GLabel 7250 2800 1    60   Input ~ 0
+COL10
+Text GLabel 8150 2800 1    60   Input ~ 0
+COL11
+Text GLabel 8350 2800 1    60   Input ~ 0
+COL12
+Text GLabel 9250 2800 1    60   Input ~ 0
+COL13
+Text GLabel 9450 2800 1    60   Input ~ 0
+COL14
+Text GLabel 10350 2800 1    60   Input ~ 0
+COL15
+Wire Wire Line
+	9900 3250 1550 3250
+Wire Wire Line
+	9900 4250 1550 4250
+Text GLabel 1550 3250 0    60   Input ~ 0
+ENC0
+Text GLabel 1550 3750 0    60   Input ~ 0
+ENC1
+Text GLabel 1550 4250 0    60   Input ~ 0
+ENC2
+$Comp
+L Concentric SWE00
+U 2 1 57657B67
+P 3300 3100
+F 0 "SWE00" H 3300 2850 60  0000 C CNN
+F 1 "Concentric" H 3300 2925 60  0000 C CNN
+F 2 "mystuff:e37" H 3300 3075 60  0001 C CNN
+F 3 "" H 3300 3075 60  0000 C CNN
+	2    3300 3100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Concentric SWE04
+U 2 1 576582A2
+P 5500 3100
+F 0 "SWE04" H 5500 2850 60  0000 C CNN
+F 1 "Concentric" H 5500 2925 60  0000 C CNN
+F 2 "mystuff:e37" H 5500 3075 60  0001 C CNN
+F 3 "" H 5500 3075 60  0000 C CNN
+	2    5500 3100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Concentric SWE08
+U 2 1 576588F8
+P 7700 3100
+F 0 "SWE08" H 7700 2850 60  0000 C CNN
+F 1 "Concentric" H 7700 2925 60  0000 C CNN
+F 2 "mystuff:e37" H 7700 3075 60  0001 C CNN
+F 3 "" H 7700 3075 60  0000 C CNN
+	2    7700 3100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Concentric SWE012
+U 2 1 57658D80
+P 9900 3100
+F 0 "SWE012" H 9900 2850 60  0000 C CNN
+F 1 "Concentric" H 9900 2925 60  0000 C CNN
+F 2 "mystuff:e37" H 9900 3075 60  0001 C CNN
+F 3 "" H 9900 3075 60  0000 C CNN
+	2    9900 3100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Encoder SWE10
+U 1 1 5765959B
+P 2200 3600
+F 0 "SWE10" H 2200 3350 60  0000 C CNN
+F 1 "Encoder" H 2200 3425 60  0000 C CNN
+F 2 "mystuff:pec11r" H 2200 3575 60  0001 C CNN
+F 3 "" H 2200 3575 60  0000 C CNN
+	1    2200 3600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Encoder SWE12
+U 1 1 57659DC1
+P 3300 3600
+F 0 "SWE12" H 3300 3350 60  0000 C CNN
+F 1 "Encoder" H 3300 3425 60  0000 C CNN
+F 2 "mystuff:pec11r" H 3300 3575 60  0001 C CNN
+F 3 "" H 3300 3575 60  0000 C CNN
+	1    3300 3600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Encoder SWE14
+U 1 1 57659EF7
+P 4400 3600
+F 0 "SWE14" H 4400 3350 60  0000 C CNN
+F 1 "Encoder" H 4400 3425 60  0000 C CNN
+F 2 "mystuff:pec11r" H 4400 3575 60  0001 C CNN
+F 3 "" H 4400 3575 60  0000 C CNN
+	1    4400 3600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Encoder SWE16
+U 1 1 5765A0FE
+P 5500 3600
+F 0 "SWE16" H 5500 3350 60  0000 C CNN
+F 1 "Encoder" H 5500 3425 60  0000 C CNN
+F 2 "mystuff:pec11r" H 5500 3575 60  0001 C CNN
+F 3 "" H 5500 3575 60  0000 C CNN
+	1    5500 3600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Encoder SWE20
+U 1 1 5765A65C
+P 2200 4100
+F 0 "SWE20" H 2200 3850 60  0000 C CNN
+F 1 "Encoder" H 2200 3925 60  0000 C CNN
+F 2 "mystuff:pec11r" H 2200 4075 60  0001 C CNN
+F 3 "" H 2200 4075 60  0000 C CNN
+	1    2200 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Encoder SWE22
+U 1 1 5765A845
+P 3300 4100
+F 0 "SWE22" H 3300 3850 60  0000 C CNN
+F 1 "Encoder" H 3300 3925 60  0000 C CNN
+F 2 "mystuff:pec11r" H 3300 4075 60  0001 C CNN
+F 3 "" H 3300 4075 60  0000 C CNN
+	1    3300 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Encoder SWE24
+U 1 1 5765A933
+P 4400 4100
+F 0 "SWE24" H 4400 3850 60  0000 C CNN
+F 1 "Encoder" H 4400 3925 60  0000 C CNN
+F 2 "mystuff:pec11r" H 4400 4075 60  0001 C CNN
+F 3 "" H 4400 4075 60  0000 C CNN
+	1    4400 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Encoder SWE26
+U 1 1 5765AA1E
+P 5500 4100
+F 0 "SWE26" H 5500 3850 60  0000 C CNN
+F 1 "Encoder" H 5500 3925 60  0000 C CNN
+F 2 "mystuff:pec11r" H 5500 4075 60  0001 C CNN
+F 3 "" H 5500 4075 60  0000 C CNN
+	1    5500 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Encoder SWE28
+U 1 1 5765AF7C
+P 6600 4100
+F 0 "SWE28" H 6600 3850 60  0000 C CNN
+F 1 "Encoder" H 6600 3925 60  0000 C CNN
+F 2 "mystuff:pec11r" H 6600 4075 60  0001 C CNN
+F 3 "" H 6600 4075 60  0000 C CNN
+	1    6600 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Encoder SWE210
+U 1 1 5765B06D
+P 7700 4100
+F 0 "SWE210" H 7700 3850 60  0000 C CNN
+F 1 "Encoder" H 7700 3925 60  0000 C CNN
+F 2 "mystuff:pec11r" H 7700 4075 60  0001 C CNN
+F 3 "" H 7700 4075 60  0000 C CNN
+	1    7700 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Encoder SWE212
+U 1 1 5765B16B
+P 8800 4100
+F 0 "SWE212" H 8800 3850 60  0000 C CNN
+F 1 "Encoder" H 8800 3925 60  0000 C CNN
+F 2 "mystuff:pec11r" H 8800 4075 60  0001 C CNN
+F 3 "" H 8800 4075 60  0000 C CNN
+	1    8800 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Encoder SWE214
+U 1 1 5765B5A8
+P 9900 4100
+F 0 "SWE214" H 9900 3850 60  0000 C CNN
+F 1 "Encoder" H 9900 3925 60  0000 C CNN
+F 2 "mystuff:pec11r" H 9900 4075 60  0001 C CNN
+F 3 "" H 9900 4075 60  0000 C CNN
+	1    9900 4100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7700 3750 1550 3750
+$Comp
+L Concentric SWE18
+U 2 1 5765FFA0
+P 7700 3600
+F 0 "SWE18" H 7700 3350 60  0000 C CNN
+F 1 "Concentric" H 7700 3425 60  0000 C CNN
+F 2 "mystuff:e37" H 7700 3575 60  0001 C CNN
+F 3 "" H 7700 3575 60  0000 C CNN
+	2    7700 3600
+	-1   0    0    1   
+$EndComp
+$EndSCHEMATC

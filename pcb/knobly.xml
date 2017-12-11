@@ -1,0 +1,2593 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>C:/Users/stefan/projects/knobly/pcb/knobly.sch</source>
+    <date>19/06/2016 19:19:00</date>
+    <tool>Eeschema 4.0.2-stable</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Knobly</title>
+        <company/>
+        <rev/>
+        <date/>
+        <source>knobly.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/controller/" tstamps="/575EBC1B/">
+      <title_block>
+        <title>Knobly - Controller</title>
+        <company/>
+        <rev/>
+        <date/>
+        <source>controller.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="3" name="/matrix/" tstamps="/575EBC3A/">
+      <title_block>
+        <title>Button Matrix</title>
+        <company/>
+        <rev/>
+        <date/>
+        <source>matrix.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="4" name="/encoder matrix/" tstamps="/57629DE5/">
+      <title_block>
+        <title>Rotary Encoder Matrix</title>
+        <company/>
+        <rev/>
+        <date/>
+        <source>encmatrix.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="U1">
+      <value>PIC18F4550_TQFP</value>
+      <footprint>Housings_QFP:TQFP-44_10x10mm_Pitch0.8mm</footprint>
+      <libsource lib="pic18f4550_tqfp" part="PIC18F4550_TQFP"/>
+      <sheetpath names="/controller/" tstamps="/575EBC1B/"/>
+      <tstamp>575EBC67</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>470n</value>
+      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/controller/" tstamps="/575EBC1B/"/>
+      <tstamp>575EC054</tstamp>
+    </comp>
+    <comp ref="P1">
+      <value>USB_B</value>
+      <footprint>mystuff:USBBVertical</footprint>
+      <libsource lib="conn" part="USB_B"/>
+      <sheetpath names="/controller/" tstamps="/575EBC1B/"/>
+      <tstamp>575EC303</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>RJ12</value>
+      <footprint>Socket_Strips:Socket_Strip_Straight_1x06</footprint>
+      <libsource lib="conn" part="RJ12"/>
+      <sheetpath names="/controller/" tstamps="/575EBC1B/"/>
+      <tstamp>575EC8C0</tstamp>
+    </comp>
+    <comp ref="Y1">
+      <value>20Mhz</value>
+      <footprint>mystuff:HC49US</footprint>
+      <libsource lib="device" part="Crystal"/>
+      <sheetpath names="/controller/" tstamps="/575EBC1B/"/>
+      <tstamp>575EE04A</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>15p</value>
+      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/controller/" tstamps="/575EBC1B/"/>
+      <tstamp>575EE652</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>15p</value>
+      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/controller/" tstamps="/575EBC1B/"/>
+      <tstamp>575EE6AB</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value>100n</value>
+      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/controller/" tstamps="/575EBC1B/"/>
+      <tstamp>575EFB9F</tstamp>
+    </comp>
+    <comp ref="C5">
+      <value>100n</value>
+      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/controller/" tstamps="/575EBC1B/"/>
+      <tstamp>575F0003</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>50k</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/controller/" tstamps="/575EBC1B/"/>
+      <tstamp>575F03A9</tstamp>
+    </comp>
+    <comp ref="C6">
+      <value>10u</value>
+      <footprint>Capacitors_SMD:c_elec_4x4.5</footprint>
+      <libsource lib="device" part="CP"/>
+      <sheetpath names="/controller/" tstamps="/575EBC1B/"/>
+      <tstamp>576ECC87</tstamp>
+    </comp>
+    <comp ref="D02">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>5766F2A9</tstamp>
+    </comp>
+    <comp ref="D03">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>5766F6AF</tstamp>
+    </comp>
+    <comp ref="D00">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>5766F735</tstamp>
+    </comp>
+    <comp ref="D01">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>5766F747</tstamp>
+    </comp>
+    <comp ref="D06">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>5766F9F9</tstamp>
+    </comp>
+    <comp ref="D07">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>5766FA0B</tstamp>
+    </comp>
+    <comp ref="D04">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>5766FA1D</tstamp>
+    </comp>
+    <comp ref="D05">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>5766FA2F</tstamp>
+    </comp>
+    <comp ref="D08">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>57670BB5</tstamp>
+    </comp>
+    <comp ref="D12">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>57671541</tstamp>
+    </comp>
+    <comp ref="D13">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>57671553</tstamp>
+    </comp>
+    <comp ref="D10">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>57671565</tstamp>
+    </comp>
+    <comp ref="D11">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>57671577</tstamp>
+    </comp>
+    <comp ref="D16">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>57671589</tstamp>
+    </comp>
+    <comp ref="D17">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>5767159B</tstamp>
+    </comp>
+    <comp ref="D14">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>576715AD</tstamp>
+    </comp>
+    <comp ref="D15">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>576715BF</tstamp>
+    </comp>
+    <comp ref="D110">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>576715D1</tstamp>
+    </comp>
+    <comp ref="D111">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>576715E3</tstamp>
+    </comp>
+    <comp ref="D18">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>576715F5</tstamp>
+    </comp>
+    <comp ref="D19">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>57671607</tstamp>
+    </comp>
+    <comp ref="D114">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>57671619</tstamp>
+    </comp>
+    <comp ref="D115">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>5767162B</tstamp>
+    </comp>
+    <comp ref="D112">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>5767163D</tstamp>
+    </comp>
+    <comp ref="D113">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>5767164F</tstamp>
+    </comp>
+    <comp ref="D22">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>57671C01</tstamp>
+    </comp>
+    <comp ref="D23">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>57671C13</tstamp>
+    </comp>
+    <comp ref="D20">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>57671C25</tstamp>
+    </comp>
+    <comp ref="D21">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>57671C37</tstamp>
+    </comp>
+    <comp ref="D26">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>57671C49</tstamp>
+    </comp>
+    <comp ref="D27">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>57671C5B</tstamp>
+    </comp>
+    <comp ref="D24">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>57671C6D</tstamp>
+    </comp>
+    <comp ref="D25">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>57671C7F</tstamp>
+    </comp>
+    <comp ref="D210">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>57671C91</tstamp>
+    </comp>
+    <comp ref="D211">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>57671CA3</tstamp>
+    </comp>
+    <comp ref="D28">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>57671CB5</tstamp>
+    </comp>
+    <comp ref="D29">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>57671CC7</tstamp>
+    </comp>
+    <comp ref="D212">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>57671CFD</tstamp>
+    </comp>
+    <comp ref="D32">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>57672141</tstamp>
+    </comp>
+    <comp ref="D33">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>57672153</tstamp>
+    </comp>
+    <comp ref="D30">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>57672165</tstamp>
+    </comp>
+    <comp ref="D31">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>57672177</tstamp>
+    </comp>
+    <comp ref="D36">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>57672189</tstamp>
+    </comp>
+    <comp ref="D37">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>5767219B</tstamp>
+    </comp>
+    <comp ref="D34">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>576721AD</tstamp>
+    </comp>
+    <comp ref="D35">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>576721BF</tstamp>
+    </comp>
+    <comp ref="D310">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>576721D1</tstamp>
+    </comp>
+    <comp ref="D311">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>576721E3</tstamp>
+    </comp>
+    <comp ref="D38">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>576721F5</tstamp>
+    </comp>
+    <comp ref="D39">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>57672207</tstamp>
+    </comp>
+    <comp ref="D314">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>57672219</tstamp>
+    </comp>
+    <comp ref="D315">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>5767222B</tstamp>
+    </comp>
+    <comp ref="D312">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>5767223D</tstamp>
+    </comp>
+    <comp ref="D313">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>5767224F</tstamp>
+    </comp>
+    <comp ref="D09">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>57677C03</tstamp>
+    </comp>
+    <comp ref="SWE00">
+      <value>Concentric</value>
+      <footprint>mystuff:e37</footprint>
+      <libsource lib="encoder" part="Concentric"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>5767BC8A</tstamp>
+    </comp>
+    <comp ref="SWE04">
+      <value>Concentric</value>
+      <footprint>mystuff:e37</footprint>
+      <libsource lib="encoder" part="Concentric"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>5767C7E2</tstamp>
+    </comp>
+    <comp ref="SWE08">
+      <value>Concentric</value>
+      <footprint>mystuff:e37</footprint>
+      <libsource lib="encoder" part="Concentric"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>5767CB76</tstamp>
+    </comp>
+    <comp ref="SWE012">
+      <value>Concentric</value>
+      <footprint>mystuff:e37</footprint>
+      <libsource lib="encoder" part="Concentric"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>5767CED4</tstamp>
+    </comp>
+    <comp ref="SWE10">
+      <value>Encoder</value>
+      <footprint>mystuff:pec11r</footprint>
+      <libsource lib="encoder" part="Encoder"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>5767D04D</tstamp>
+    </comp>
+    <comp ref="SWE12">
+      <value>Encoder</value>
+      <footprint>mystuff:pec11r</footprint>
+      <libsource lib="encoder" part="Encoder"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>5767DD6F</tstamp>
+    </comp>
+    <comp ref="SWE14">
+      <value>Encoder</value>
+      <footprint>mystuff:pec11r</footprint>
+      <libsource lib="encoder" part="Encoder"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>5767DF15</tstamp>
+    </comp>
+    <comp ref="SWE16">
+      <value>Encoder</value>
+      <footprint>mystuff:pec11r</footprint>
+      <libsource lib="encoder" part="Encoder"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>57680D8E</tstamp>
+    </comp>
+    <comp ref="SWE18">
+      <value>Concentric</value>
+      <footprint>mystuff:e37</footprint>
+      <libsource lib="encoder" part="Concentric"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>57682ED5</tstamp>
+    </comp>
+    <comp ref="SWE24">
+      <value>Encoder</value>
+      <footprint>mystuff:pec11r</footprint>
+      <libsource lib="encoder" part="Encoder"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>57686733</tstamp>
+    </comp>
+    <comp ref="SWE26">
+      <value>Encoder</value>
+      <footprint>mystuff:pec11r</footprint>
+      <libsource lib="encoder" part="Encoder"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>576868A4</tstamp>
+    </comp>
+    <comp ref="SWE28">
+      <value>Encoder</value>
+      <footprint>mystuff:pec11r</footprint>
+      <libsource lib="encoder" part="Encoder"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>576869FE</tstamp>
+    </comp>
+    <comp ref="SWE210">
+      <value>Encoder</value>
+      <footprint>mystuff:pec11r</footprint>
+      <libsource lib="encoder" part="Encoder"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>57686B53</tstamp>
+    </comp>
+    <comp ref="SWE212">
+      <value>Encoder</value>
+      <footprint>mystuff:pec11r</footprint>
+      <libsource lib="encoder" part="Encoder"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>57686CB3</tstamp>
+    </comp>
+    <comp ref="SWE214">
+      <value>Encoder</value>
+      <footprint>mystuff:pec11r</footprint>
+      <libsource lib="encoder" part="Encoder"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>57686E22</tstamp>
+    </comp>
+    <comp ref="SW414">
+      <value>FLIP</value>
+      <footprint>mystuff:M2018ES2G13</footprint>
+      <libsource lib="encoder" part="FLIP"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>576C8232</tstamp>
+    </comp>
+    <comp ref="D414">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>576C94BC</tstamp>
+    </comp>
+    <comp ref="SW514">
+      <value>FLIP</value>
+      <footprint>mystuff:M2018ES2G13</footprint>
+      <libsource lib="encoder" part="FLIP"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>576CA317</tstamp>
+    </comp>
+    <comp ref="D514">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>576CA31D</tstamp>
+    </comp>
+    <comp ref="SW614">
+      <value>FLIP</value>
+      <footprint>mystuff:M2018ES2G13</footprint>
+      <libsource lib="encoder" part="FLIP"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>576CA6CC</tstamp>
+    </comp>
+    <comp ref="D614">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>576CA6D2</tstamp>
+    </comp>
+    <comp ref="SW412">
+      <value>FLIP</value>
+      <footprint>mystuff:M2018ES2G13</footprint>
+      <libsource lib="encoder" part="FLIP"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>576CE6C6</tstamp>
+    </comp>
+    <comp ref="D412">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>576CE6CC</tstamp>
+    </comp>
+    <comp ref="SW512">
+      <value>FLIP</value>
+      <footprint>mystuff:M2018ES2G13</footprint>
+      <libsource lib="encoder" part="FLIP"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>576CE6D2</tstamp>
+    </comp>
+    <comp ref="D512">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>576CE6D8</tstamp>
+    </comp>
+    <comp ref="SW612">
+      <value>FLIP</value>
+      <footprint>mystuff:M2018ES2G13</footprint>
+      <libsource lib="encoder" part="FLIP"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>576CE6DE</tstamp>
+    </comp>
+    <comp ref="D612">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>576CE6E4</tstamp>
+    </comp>
+    <comp ref="SW410">
+      <value>FLIP</value>
+      <footprint>mystuff:M2018ES2G13</footprint>
+      <libsource lib="encoder" part="FLIP"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>576D019F</tstamp>
+    </comp>
+    <comp ref="D410">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>576D01A5</tstamp>
+    </comp>
+    <comp ref="SW510">
+      <value>FLIP</value>
+      <footprint>mystuff:M2018ES2G13</footprint>
+      <libsource lib="encoder" part="FLIP"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>576D01AB</tstamp>
+    </comp>
+    <comp ref="D510">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>576D01B1</tstamp>
+    </comp>
+    <comp ref="SW610">
+      <value>FLIP</value>
+      <footprint>mystuff:M2018ES2G13</footprint>
+      <libsource lib="encoder" part="FLIP"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>576D01B7</tstamp>
+    </comp>
+    <comp ref="D610">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>576D01BD</tstamp>
+    </comp>
+    <comp ref="SW48">
+      <value>FLIP</value>
+      <footprint>mystuff:M2018ES2G13</footprint>
+      <libsource lib="encoder" part="FLIP"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>576D01D2</tstamp>
+    </comp>
+    <comp ref="D48">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>576D01D8</tstamp>
+    </comp>
+    <comp ref="SW58">
+      <value>FLIP</value>
+      <footprint>mystuff:M2018ES2G13</footprint>
+      <libsource lib="encoder" part="FLIP"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>576D01DE</tstamp>
+    </comp>
+    <comp ref="D58">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>576D01E4</tstamp>
+    </comp>
+    <comp ref="SW68">
+      <value>FLIP</value>
+      <footprint>mystuff:M2018ES2G13</footprint>
+      <libsource lib="encoder" part="FLIP"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>576D01EA</tstamp>
+    </comp>
+    <comp ref="D68">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>576D01F0</tstamp>
+    </comp>
+    <comp ref="SW46">
+      <value>FLIP</value>
+      <footprint>mystuff:M2018ES2G13</footprint>
+      <libsource lib="encoder" part="FLIP"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>576D0AFD</tstamp>
+    </comp>
+    <comp ref="D46">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>576D0B03</tstamp>
+    </comp>
+    <comp ref="SW56">
+      <value>FLIP</value>
+      <footprint>mystuff:M2018ES2G13</footprint>
+      <libsource lib="encoder" part="FLIP"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>576D0B09</tstamp>
+    </comp>
+    <comp ref="D56">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>576D0B0F</tstamp>
+    </comp>
+    <comp ref="SW66">
+      <value>FLIP</value>
+      <footprint>mystuff:M2018ES2G13</footprint>
+      <libsource lib="encoder" part="FLIP"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>576D0B15</tstamp>
+    </comp>
+    <comp ref="D66">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>576D0B1B</tstamp>
+    </comp>
+    <comp ref="SW44">
+      <value>FLIP</value>
+      <footprint>mystuff:M2018ES2G13</footprint>
+      <libsource lib="encoder" part="FLIP"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>576D0B30</tstamp>
+    </comp>
+    <comp ref="D44">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>576D0B36</tstamp>
+    </comp>
+    <comp ref="SW54">
+      <value>FLIP</value>
+      <footprint>mystuff:M2018ES2G13</footprint>
+      <libsource lib="encoder" part="FLIP"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>576D0B3C</tstamp>
+    </comp>
+    <comp ref="D54">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>576D0B42</tstamp>
+    </comp>
+    <comp ref="SW64">
+      <value>FLIP</value>
+      <footprint>mystuff:M2018ES2G13</footprint>
+      <libsource lib="encoder" part="FLIP"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>576D0B48</tstamp>
+    </comp>
+    <comp ref="D64">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>576D0B4E</tstamp>
+    </comp>
+    <comp ref="D40">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>576DC4C1</tstamp>
+    </comp>
+    <comp ref="D41">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>576DCC5A</tstamp>
+    </comp>
+    <comp ref="SW00">
+      <value>TACT</value>
+      <footprint>mystuff:TACT</footprint>
+      <libsource lib="encoder" part="TACT"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>5760A288</tstamp>
+    </comp>
+    <comp ref="SW01">
+      <value>TACT</value>
+      <footprint>mystuff:TACT</footprint>
+      <libsource lib="encoder" part="TACT"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>5760CF8E</tstamp>
+    </comp>
+    <comp ref="SW02">
+      <value>TACT</value>
+      <footprint>mystuff:TACT</footprint>
+      <libsource lib="encoder" part="TACT"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>5760D107</tstamp>
+    </comp>
+    <comp ref="SW03">
+      <value>TACT</value>
+      <footprint>mystuff:TACT</footprint>
+      <libsource lib="encoder" part="TACT"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>5760D279</tstamp>
+    </comp>
+    <comp ref="SW04">
+      <value>TACT</value>
+      <footprint>mystuff:TACT</footprint>
+      <libsource lib="encoder" part="TACT"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>5760D3F0</tstamp>
+    </comp>
+    <comp ref="SW05">
+      <value>TACT</value>
+      <footprint>mystuff:TACT</footprint>
+      <libsource lib="encoder" part="TACT"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>5760D56C</tstamp>
+    </comp>
+    <comp ref="SW06">
+      <value>TACT</value>
+      <footprint>mystuff:TACT</footprint>
+      <libsource lib="encoder" part="TACT"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>5760D6E5</tstamp>
+    </comp>
+    <comp ref="SW14">
+      <value>TACT</value>
+      <footprint>mystuff:TACT</footprint>
+      <libsource lib="encoder" part="TACT"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>5760D861</tstamp>
+    </comp>
+    <comp ref="SW13">
+      <value>TACT</value>
+      <footprint>mystuff:TACT</footprint>
+      <libsource lib="encoder" part="TACT"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>5760D9F4</tstamp>
+    </comp>
+    <comp ref="SW11">
+      <value>TACT</value>
+      <footprint>mystuff:TACT</footprint>
+      <libsource lib="encoder" part="TACT"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>5760DB7A</tstamp>
+    </comp>
+    <comp ref="SW10">
+      <value>TACT</value>
+      <footprint>mystuff:TACT</footprint>
+      <libsource lib="encoder" part="TACT"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>5760DCFF</tstamp>
+    </comp>
+    <comp ref="SW20">
+      <value>TACT</value>
+      <footprint>mystuff:TACT</footprint>
+      <libsource lib="encoder" part="TACT"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>5760DE83</tstamp>
+    </comp>
+    <comp ref="SW21">
+      <value>TACT</value>
+      <footprint>mystuff:TACT</footprint>
+      <libsource lib="encoder" part="TACT"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>5760E01A</tstamp>
+    </comp>
+    <comp ref="SW22">
+      <value>TACT</value>
+      <footprint>mystuff:TACT</footprint>
+      <libsource lib="encoder" part="TACT"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>5760E222</tstamp>
+    </comp>
+    <comp ref="SW23">
+      <value>TACT</value>
+      <footprint>mystuff:TACT</footprint>
+      <libsource lib="encoder" part="TACT"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>5760E3AD</tstamp>
+    </comp>
+    <comp ref="SW24">
+      <value>TACT</value>
+      <footprint>mystuff:TACT</footprint>
+      <libsource lib="encoder" part="TACT"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>5760E53F</tstamp>
+    </comp>
+    <comp ref="SW25">
+      <value>TACT</value>
+      <footprint>mystuff:TACT</footprint>
+      <libsource lib="encoder" part="TACT"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>5760E6D4</tstamp>
+    </comp>
+    <comp ref="SW26">
+      <value>TACT</value>
+      <footprint>mystuff:TACT</footprint>
+      <libsource lib="encoder" part="TACT"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>5760E874</tstamp>
+    </comp>
+    <comp ref="SW30">
+      <value>TACT</value>
+      <footprint>mystuff:TACT</footprint>
+      <libsource lib="encoder" part="TACT"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>5760F301</tstamp>
+    </comp>
+    <comp ref="SW31">
+      <value>TACT</value>
+      <footprint>mystuff:TACT</footprint>
+      <libsource lib="encoder" part="TACT"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>5760F49B</tstamp>
+    </comp>
+    <comp ref="SW32">
+      <value>TACT</value>
+      <footprint>mystuff:TACT</footprint>
+      <libsource lib="encoder" part="TACT"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>5760F644</tstamp>
+    </comp>
+    <comp ref="SW33">
+      <value>TACT</value>
+      <footprint>mystuff:TACT</footprint>
+      <libsource lib="encoder" part="TACT"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>5760F7EE</tstamp>
+    </comp>
+    <comp ref="SW34">
+      <value>TACT</value>
+      <footprint>mystuff:TACT</footprint>
+      <libsource lib="encoder" part="TACT"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>5760F993</tstamp>
+    </comp>
+    <comp ref="SW35">
+      <value>TACT</value>
+      <footprint>mystuff:TACT</footprint>
+      <libsource lib="encoder" part="TACT"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>5760FB45</tstamp>
+    </comp>
+    <comp ref="SW36">
+      <value>TACT</value>
+      <footprint>mystuff:TACT</footprint>
+      <libsource lib="encoder" part="TACT"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>5760FCF2</tstamp>
+    </comp>
+    <comp ref="SW37">
+      <value>TACT</value>
+      <footprint>mystuff:TACT</footprint>
+      <libsource lib="encoder" part="TACT"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>57610665</tstamp>
+    </comp>
+    <comp ref="SW27">
+      <value>TACT</value>
+      <footprint>mystuff:TACT</footprint>
+      <libsource lib="encoder" part="TACT"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>57610812</tstamp>
+    </comp>
+    <comp ref="SW17">
+      <value>TACT</value>
+      <footprint>mystuff:TACT</footprint>
+      <libsource lib="encoder" part="TACT"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>57610DCA</tstamp>
+    </comp>
+    <comp ref="SW07">
+      <value>TACT</value>
+      <footprint>mystuff:TACT</footprint>
+      <libsource lib="encoder" part="TACT"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>57610F8D</tstamp>
+    </comp>
+    <comp ref="SW08">
+      <value>TACT</value>
+      <footprint>mystuff:TACT</footprint>
+      <libsource lib="encoder" part="TACT"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>5761114D</tstamp>
+    </comp>
+    <comp ref="SW28">
+      <value>TACT</value>
+      <footprint>mystuff:TACT</footprint>
+      <libsource lib="encoder" part="TACT"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>5761130C</tstamp>
+    </comp>
+    <comp ref="SW38">
+      <value>TACT</value>
+      <footprint>mystuff:TACT</footprint>
+      <libsource lib="encoder" part="TACT"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>576114E6</tstamp>
+    </comp>
+    <comp ref="SW39">
+      <value>TACT</value>
+      <footprint>mystuff:TACT</footprint>
+      <libsource lib="encoder" part="TACT"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>576116B1</tstamp>
+    </comp>
+    <comp ref="SW29">
+      <value>TACT</value>
+      <footprint>mystuff:TACT</footprint>
+      <libsource lib="encoder" part="TACT"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>5761187D</tstamp>
+    </comp>
+    <comp ref="SW19">
+      <value>TACT</value>
+      <footprint>mystuff:TACT</footprint>
+      <libsource lib="encoder" part="TACT"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>57611A4E</tstamp>
+    </comp>
+    <comp ref="SW110">
+      <value>TACT</value>
+      <footprint>mystuff:TACT</footprint>
+      <libsource lib="encoder" part="TACT"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>57611C1E</tstamp>
+    </comp>
+    <comp ref="SW210">
+      <value>TACT</value>
+      <footprint>mystuff:TACT</footprint>
+      <libsource lib="encoder" part="TACT"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>57611DF1</tstamp>
+    </comp>
+    <comp ref="SW211">
+      <value>TACT</value>
+      <footprint>mystuff:TACT</footprint>
+      <libsource lib="encoder" part="TACT"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>57611FD3</tstamp>
+    </comp>
+    <comp ref="SW111">
+      <value>TACT</value>
+      <footprint>mystuff:TACT</footprint>
+      <libsource lib="encoder" part="TACT"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>576121B0</tstamp>
+    </comp>
+    <comp ref="SW09">
+      <value>TACT</value>
+      <footprint>mystuff:TACT</footprint>
+      <libsource lib="encoder" part="TACT"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>57616DA8</tstamp>
+    </comp>
+    <comp ref="SWE20">
+      <value>Encoder</value>
+      <footprint>mystuff:pec11r</footprint>
+      <libsource lib="encoder" part="Encoder"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>5763B5B1</tstamp>
+    </comp>
+    <comp ref="SWE22">
+      <value>Encoder</value>
+      <footprint>mystuff:pec11r</footprint>
+      <libsource lib="encoder" part="Encoder"/>
+      <sheetpath names="/matrix/" tstamps="/575EBC3A/"/>
+      <tstamp>5763B7CA</tstamp>
+    </comp>
+    <comp ref="DE01">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/encoder matrix/" tstamps="/57629DE5/"/>
+      <tstamp>5764754E</tstamp>
+    </comp>
+    <comp ref="DE00">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/encoder matrix/" tstamps="/57629DE5/"/>
+      <tstamp>57647554</tstamp>
+    </comp>
+    <comp ref="DE03">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/encoder matrix/" tstamps="/57629DE5/"/>
+      <tstamp>5764CEC3</tstamp>
+    </comp>
+    <comp ref="DE02">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/encoder matrix/" tstamps="/57629DE5/"/>
+      <tstamp>5764CEC9</tstamp>
+    </comp>
+    <comp ref="DE05">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/encoder matrix/" tstamps="/57629DE5/"/>
+      <tstamp>5764D027</tstamp>
+    </comp>
+    <comp ref="DE04">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/encoder matrix/" tstamps="/57629DE5/"/>
+      <tstamp>5764D02D</tstamp>
+    </comp>
+    <comp ref="DE07">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/encoder matrix/" tstamps="/57629DE5/"/>
+      <tstamp>5764D041</tstamp>
+    </comp>
+    <comp ref="DE06">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/encoder matrix/" tstamps="/57629DE5/"/>
+      <tstamp>5764D047</tstamp>
+    </comp>
+    <comp ref="DE09">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/encoder matrix/" tstamps="/57629DE5/"/>
+      <tstamp>5764D46F</tstamp>
+    </comp>
+    <comp ref="DE08">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/encoder matrix/" tstamps="/57629DE5/"/>
+      <tstamp>5764D475</tstamp>
+    </comp>
+    <comp ref="DE011">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/encoder matrix/" tstamps="/57629DE5/"/>
+      <tstamp>5764D489</tstamp>
+    </comp>
+    <comp ref="DE010">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/encoder matrix/" tstamps="/57629DE5/"/>
+      <tstamp>5764D48F</tstamp>
+    </comp>
+    <comp ref="DE013">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/encoder matrix/" tstamps="/57629DE5/"/>
+      <tstamp>5764D4A3</tstamp>
+    </comp>
+    <comp ref="DE012">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/encoder matrix/" tstamps="/57629DE5/"/>
+      <tstamp>5764D4A9</tstamp>
+    </comp>
+    <comp ref="DE015">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/encoder matrix/" tstamps="/57629DE5/"/>
+      <tstamp>5764D4BD</tstamp>
+    </comp>
+    <comp ref="DE014">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/encoder matrix/" tstamps="/57629DE5/"/>
+      <tstamp>5764D4C3</tstamp>
+    </comp>
+    <comp ref="DE11">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/encoder matrix/" tstamps="/57629DE5/"/>
+      <tstamp>5764D987</tstamp>
+    </comp>
+    <comp ref="DE10">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/encoder matrix/" tstamps="/57629DE5/"/>
+      <tstamp>5764D98D</tstamp>
+    </comp>
+    <comp ref="DE13">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/encoder matrix/" tstamps="/57629DE5/"/>
+      <tstamp>5764D9A1</tstamp>
+    </comp>
+    <comp ref="DE12">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/encoder matrix/" tstamps="/57629DE5/"/>
+      <tstamp>5764D9A7</tstamp>
+    </comp>
+    <comp ref="DE15">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/encoder matrix/" tstamps="/57629DE5/"/>
+      <tstamp>5764D9BB</tstamp>
+    </comp>
+    <comp ref="DE14">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/encoder matrix/" tstamps="/57629DE5/"/>
+      <tstamp>5764D9C1</tstamp>
+    </comp>
+    <comp ref="DE17">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/encoder matrix/" tstamps="/57629DE5/"/>
+      <tstamp>5764D9D5</tstamp>
+    </comp>
+    <comp ref="DE16">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/encoder matrix/" tstamps="/57629DE5/"/>
+      <tstamp>5764D9DB</tstamp>
+    </comp>
+    <comp ref="DE19">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/encoder matrix/" tstamps="/57629DE5/"/>
+      <tstamp>5764D9EF</tstamp>
+    </comp>
+    <comp ref="DE18">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/encoder matrix/" tstamps="/57629DE5/"/>
+      <tstamp>5764D9F5</tstamp>
+    </comp>
+    <comp ref="DE111">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/encoder matrix/" tstamps="/57629DE5/"/>
+      <tstamp>5764DA09</tstamp>
+    </comp>
+    <comp ref="DE110">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/encoder matrix/" tstamps="/57629DE5/"/>
+      <tstamp>5764DA0F</tstamp>
+    </comp>
+    <comp ref="DE21">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/encoder matrix/" tstamps="/57629DE5/"/>
+      <tstamp>5764DE2F</tstamp>
+    </comp>
+    <comp ref="DE20">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/encoder matrix/" tstamps="/57629DE5/"/>
+      <tstamp>5764DE35</tstamp>
+    </comp>
+    <comp ref="DE23">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/encoder matrix/" tstamps="/57629DE5/"/>
+      <tstamp>5764DE49</tstamp>
+    </comp>
+    <comp ref="DE22">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/encoder matrix/" tstamps="/57629DE5/"/>
+      <tstamp>5764DE4F</tstamp>
+    </comp>
+    <comp ref="DE25">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/encoder matrix/" tstamps="/57629DE5/"/>
+      <tstamp>5764DE63</tstamp>
+    </comp>
+    <comp ref="DE24">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/encoder matrix/" tstamps="/57629DE5/"/>
+      <tstamp>5764DE69</tstamp>
+    </comp>
+    <comp ref="DE27">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/encoder matrix/" tstamps="/57629DE5/"/>
+      <tstamp>5764DE7D</tstamp>
+    </comp>
+    <comp ref="DE26">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/encoder matrix/" tstamps="/57629DE5/"/>
+      <tstamp>5764DE83</tstamp>
+    </comp>
+    <comp ref="DE29">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/encoder matrix/" tstamps="/57629DE5/"/>
+      <tstamp>5764DE97</tstamp>
+    </comp>
+    <comp ref="DE28">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/encoder matrix/" tstamps="/57629DE5/"/>
+      <tstamp>5764DE9D</tstamp>
+    </comp>
+    <comp ref="DE211">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/encoder matrix/" tstamps="/57629DE5/"/>
+      <tstamp>5764DEB1</tstamp>
+    </comp>
+    <comp ref="DE210">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/encoder matrix/" tstamps="/57629DE5/"/>
+      <tstamp>5764DEB7</tstamp>
+    </comp>
+    <comp ref="DE213">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/encoder matrix/" tstamps="/57629DE5/"/>
+      <tstamp>5764DECB</tstamp>
+    </comp>
+    <comp ref="DE212">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/encoder matrix/" tstamps="/57629DE5/"/>
+      <tstamp>5764DED1</tstamp>
+    </comp>
+    <comp ref="DE215">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/encoder matrix/" tstamps="/57629DE5/"/>
+      <tstamp>5764DEE5</tstamp>
+    </comp>
+    <comp ref="DE214">
+      <value>D_Small</value>
+      <footprint>Diodes_SMD:SOD-123</footprint>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/encoder matrix/" tstamps="/57629DE5/"/>
+      <tstamp>5764DEEB</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="device" part="C">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C?</fp>
+        <fp>C_????_*</fp>
+        <fp>C_????</fp>
+        <fp>SMD*_c</fp>
+        <fp>Capacitor*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="CP">
+      <description>Polarised capacitor</description>
+      <footprints>
+        <fp>CP*</fp>
+        <fp>Elko*</fp>
+        <fp>TantalC*</fp>
+        <fp>C*elec</fp>
+        <fp>c_elec*</fp>
+        <fp>SMD*_Pol</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CP</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="encoder" part="Concentric">
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">Concentric</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Bi" type="passive"/>
+        <pin num="2" name="S1" type="passive"/>
+        <pin num="3" name="S2" type="passive"/>
+        <pin num="4" name="Ci" type="passive"/>
+        <pin num="5" name="Ai" type="passive"/>
+        <pin num="6" name="Bo" type="passive"/>
+        <pin num="9" name="Co" type="passive"/>
+        <pin num="10" name="Ao" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="Crystal">
+      <description>Two pin crystal</description>
+      <footprints>
+        <fp>Crystal_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Y</field>
+        <field name="Value">Crystal</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="D_Small">
+      <description>Diode</description>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="encoder" part="Encoder">
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">Encoder</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+        <pin num="5" name="5" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="encoder" part="FLIP">
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">FLIP</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="pic18f4550_tqfp" part="PIC18F4550_TQFP">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">PIC18F4550_TQFP</field>
+      </fields>
+      <pins>
+        <pin num="1" name="RC7/RX/DT/SDO" type="3state"/>
+        <pin num="2" name="RD4/SPP4" type="3state"/>
+        <pin num="3" name="RD5/SPP5/P1B" type="3state"/>
+        <pin num="4" name="RD6/SPP6/P1C" type="3state"/>
+        <pin num="5" name="RD7/SPP7/P1D" type="3state"/>
+        <pin num="6" name="VSS" type="power_in"/>
+        <pin num="7" name="VDD" type="power_in"/>
+        <pin num="8" name="RB0/AN12/INT0/FLT0/SDI/SDA" type="3state"/>
+        <pin num="9" name="RB1/AN10/INT1/SCK/SCL" type="3state"/>
+        <pin num="10" name="RB2/AN8/INT2/VMO" type="3state"/>
+        <pin num="11" name="RB3/AN9/CCP2(1)/VPO" type="3state"/>
+        <pin num="12" name="NC/ICCK(2)/ICPGC(2)" type="3state"/>
+        <pin num="13" name="NC/ICDT(2)/ICPGD(2)" type="3state"/>
+        <pin num="14" name="RB4/AN11/KBI0/CSSPP" type="3state"/>
+        <pin num="15" name="RB5/KBI1/PGM" type="3state"/>
+        <pin num="16" name="RB6/KBI2/PGC" type="3state"/>
+        <pin num="17" name="RB7/KBI3/PGD" type="3state"/>
+        <pin num="18" name="MCLR/VPP/RE3" type="3state"/>
+        <pin num="19" name="RA0/AN0" type="3state"/>
+        <pin num="20" name="RA1/AN1" type="3state"/>
+        <pin num="21" name="RA2/AN2/VREF-/CVREF" type="3state"/>
+        <pin num="22" name="RA3/AN3/VREF+" type="3state"/>
+        <pin num="23" name="RA4/T0CKI/C1OUT/RCV" type="3state"/>
+        <pin num="24" name="RA5/AN4/SS/HLVDIN/C2OUT" type="3state"/>
+        <pin num="25" name="RE0/AN5/CK1SPP" type="3state"/>
+        <pin num="26" name="RE1/AN6/CK2SPP" type="3state"/>
+        <pin num="27" name="RE2/AN7/OESPP" type="3state"/>
+        <pin num="28" name="VDD" type="power_in"/>
+        <pin num="29" name="VSS" type="power_in"/>
+        <pin num="30" name="OSC1/CLKI" type="unspc"/>
+        <pin num="31" name="OSC2/CLKO/RA6" type="unspc"/>
+        <pin num="32" name="RC0/T1OSO/T13CKI" type="3state"/>
+        <pin num="33" name="NC/ICRST(2)/ICVPP(2)" type="input"/>
+        <pin num="34" name="NC/ICPORTS(2)" type="input"/>
+        <pin num="35" name="RC1/T1OSI/CCP2/UOE" type="3state"/>
+        <pin num="36" name="RC2/CCP1/P1A" type="3state"/>
+        <pin num="37" name="VUSB" type="power_out"/>
+        <pin num="38" name="RD0/SPP0" type="3state"/>
+        <pin num="39" name="RD1/SPP1" type="3state"/>
+        <pin num="40" name="RD2/SPP2" type="3state"/>
+        <pin num="41" name="RD3/SPP3" type="3state"/>
+        <pin num="42" name="RC4/D-/VM" type="3state"/>
+        <pin num="43" name="RC5/D+/VP" type="3state"/>
+        <pin num="44" name="RC6/TX/CK" type="3state"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="R">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+        <fp>Resistor_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="RJ12">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">RJ12</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+        <pin num="3" name="~" type="passive"/>
+        <pin num="4" name="~" type="passive"/>
+        <pin num="5" name="~" type="passive"/>
+        <pin num="6" name="~" type="passive"/>
+        <pin num="7" name="SHIELD_1" type="passive"/>
+        <pin num="8" name="SHIELD_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="encoder" part="TACT">
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">TACT</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="USB_B">
+      <description>B connector</description>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">USB_B</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VCC" type="power_out"/>
+        <pin num="2" name="D-" type="passive"/>
+        <pin num="3" name="D+" type="passive"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="shield" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="conn">
+      <uri>C:\Program Files\KiCad\share\kicad\library\conn.lib</uri>
+    </library>
+    <library logical="device">
+      <uri>C:\Program Files\KiCad\share\kicad\library\device.lib</uri>
+    </library>
+    <library logical="pic18f4550_tqfp">
+      <uri>C:\Users\stefan\projects\knobly\pcb\pic18f4550_tqfp.lib</uri>
+    </library>
+    <library logical="encoder">
+      <uri>C:\Users\stefan\projects\knobly\pcb\encoder.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="GND">
+      <node ref="U1" pin="28"/>
+      <node ref="U1" pin="7"/>
+      <node ref="C5" pin="2"/>
+      <node ref="C4" pin="2"/>
+      <node ref="C6" pin="2"/>
+      <node ref="J1" pin="3"/>
+      <node ref="P1" pin="4"/>
+      <node ref="P1" pin="5"/>
+      <node ref="C1" pin="2"/>
+      <node ref="J1" pin="8"/>
+      <node ref="J1" pin="7"/>
+      <node ref="C3" pin="1"/>
+      <node ref="C2" pin="2"/>
+    </net>
+    <net code="2" name="Net-(C2-Pad1)">
+      <node ref="Y1" pin="1"/>
+      <node ref="U1" pin="31"/>
+      <node ref="C2" pin="1"/>
+    </net>
+    <net code="3" name="Net-(C3-Pad2)">
+      <node ref="Y1" pin="2"/>
+      <node ref="U1" pin="30"/>
+      <node ref="C3" pin="2"/>
+    </net>
+    <net code="4" name="Net-(J1-Pad6)">
+      <node ref="J1" pin="6"/>
+    </net>
+    <net code="5" name="Net-(U1-Pad12)">
+      <node ref="U1" pin="12"/>
+    </net>
+    <net code="6" name="Net-(U1-Pad13)">
+      <node ref="U1" pin="13"/>
+    </net>
+    <net code="7" name="Net-(U1-Pad34)">
+      <node ref="U1" pin="34"/>
+    </net>
+    <net code="8" name="COL12">
+      <node ref="SW412" pin="3"/>
+      <node ref="SWE28" pin="5"/>
+      <node ref="SW512" pin="3"/>
+      <node ref="SW612" pin="3"/>
+      <node ref="DE212" pin="2"/>
+      <node ref="SWE18" pin="2"/>
+      <node ref="U1" pin="16"/>
+      <node ref="SWE14" pin="5"/>
+      <node ref="DE012" pin="2"/>
+      <node ref="J1" pin="5"/>
+    </net>
+    <net code="9" name="COL14">
+      <node ref="SW614" pin="3"/>
+      <node ref="J1" pin="4"/>
+      <node ref="DE014" pin="2"/>
+      <node ref="SWE212" pin="5"/>
+      <node ref="SW414" pin="3"/>
+      <node ref="DE214" pin="2"/>
+      <node ref="SW514" pin="3"/>
+      <node ref="SWE012" pin="2"/>
+      <node ref="U1" pin="17"/>
+    </net>
+    <net code="10" name="Net-(U1-Pad32)">
+      <node ref="U1" pin="32"/>
+    </net>
+    <net code="11" name="Net-(U1-Pad36)">
+      <node ref="U1" pin="36"/>
+    </net>
+    <net code="12" name="VCC">
+      <node ref="C5" pin="1"/>
+      <node ref="R1" pin="1"/>
+      <node ref="C6" pin="1"/>
+      <node ref="P1" pin="1"/>
+      <node ref="C4" pin="1"/>
+      <node ref="U1" pin="6"/>
+      <node ref="U1" pin="29"/>
+      <node ref="J1" pin="2"/>
+    </net>
+    <net code="13" name="Net-(U1-Pad1)">
+      <node ref="U1" pin="1"/>
+    </net>
+    <net code="14" name="COL9">
+      <node ref="SW58" pin="1"/>
+      <node ref="SW68" pin="1"/>
+      <node ref="SW09" pin="1"/>
+      <node ref="SW19" pin="1"/>
+      <node ref="SW29" pin="1"/>
+      <node ref="SW39" pin="1"/>
+      <node ref="SW48" pin="1"/>
+      <node ref="U1" pin="2"/>
+      <node ref="DE19" pin="2"/>
+      <node ref="DE29" pin="2"/>
+      <node ref="DE09" pin="2"/>
+    </net>
+    <net code="15" name="Net-(U1-Pad33)">
+      <node ref="U1" pin="33"/>
+    </net>
+    <net code="16" name="Net-(U1-Pad44)">
+      <node ref="U1" pin="44"/>
+    </net>
+    <net code="17" name="ROW5">
+      <node ref="D514" pin="1"/>
+      <node ref="U1" pin="24"/>
+      <node ref="D58" pin="1"/>
+      <node ref="D510" pin="1"/>
+      <node ref="D512" pin="1"/>
+      <node ref="D56" pin="1"/>
+      <node ref="D54" pin="1"/>
+    </net>
+    <net code="18" name="COL10">
+      <node ref="DE110" pin="2"/>
+      <node ref="SW210" pin="1"/>
+      <node ref="DE210" pin="2"/>
+      <node ref="DE010" pin="2"/>
+      <node ref="SW410" pin="3"/>
+      <node ref="SW510" pin="3"/>
+      <node ref="SW610" pin="3"/>
+      <node ref="SWE24" pin="5"/>
+      <node ref="U1" pin="15"/>
+      <node ref="SW110" pin="1"/>
+    </net>
+    <net code="19" name="ENC0">
+      <node ref="SWE08" pin="9"/>
+      <node ref="SWE04" pin="4"/>
+      <node ref="SWE012" pin="4"/>
+      <node ref="SWE08" pin="4"/>
+      <node ref="SWE00" pin="4"/>
+      <node ref="U1" pin="25"/>
+      <node ref="SWE012" pin="9"/>
+      <node ref="SWE00" pin="9"/>
+      <node ref="SWE04" pin="9"/>
+    </net>
+    <net code="20" name="ROW6">
+      <node ref="D612" pin="1"/>
+      <node ref="D64" pin="1"/>
+      <node ref="D68" pin="1"/>
+      <node ref="D614" pin="1"/>
+      <node ref="D610" pin="1"/>
+      <node ref="U1" pin="35"/>
+      <node ref="D66" pin="1"/>
+    </net>
+    <net code="21" name="ENC1">
+      <node ref="U1" pin="26"/>
+      <node ref="SWE18" pin="4"/>
+      <node ref="SWE12" pin="2"/>
+      <node ref="SWE14" pin="2"/>
+      <node ref="SWE16" pin="2"/>
+      <node ref="SWE18" pin="9"/>
+      <node ref="SWE10" pin="2"/>
+    </net>
+    <net code="22" name="ENC2">
+      <node ref="SWE24" pin="2"/>
+      <node ref="SWE22" pin="2"/>
+      <node ref="SWE20" pin="2"/>
+      <node ref="U1" pin="27"/>
+      <node ref="SWE212" pin="2"/>
+      <node ref="SWE214" pin="2"/>
+      <node ref="SWE26" pin="2"/>
+      <node ref="SWE28" pin="2"/>
+      <node ref="SWE210" pin="2"/>
+    </net>
+    <net code="23" name="Net-(C1-Pad1)">
+      <node ref="U1" pin="37"/>
+      <node ref="C1" pin="1"/>
+    </net>
+    <net code="24" name="COL8">
+      <node ref="SWE12" pin="5"/>
+      <node ref="DE28" pin="2"/>
+      <node ref="SW58" pin="3"/>
+      <node ref="SW08" pin="1"/>
+      <node ref="SW68" pin="3"/>
+      <node ref="SW28" pin="1"/>
+      <node ref="SW38" pin="1"/>
+      <node ref="SW48" pin="3"/>
+      <node ref="DE08" pin="2"/>
+      <node ref="U1" pin="14"/>
+      <node ref="DE18" pin="2"/>
+    </net>
+    <net code="25" name="COL1">
+      <node ref="SWE22" pin="5"/>
+      <node ref="SW31" pin="1"/>
+      <node ref="SW01" pin="1"/>
+      <node ref="SW11" pin="1"/>
+      <node ref="DE01" pin="2"/>
+      <node ref="U1" pin="38"/>
+      <node ref="DE21" pin="2"/>
+      <node ref="DE11" pin="2"/>
+      <node ref="SW21" pin="1"/>
+    </net>
+    <net code="26" name="ROW0">
+      <node ref="D05" pin="1"/>
+      <node ref="D09" pin="1"/>
+      <node ref="D07" pin="1"/>
+      <node ref="D02" pin="1"/>
+      <node ref="D03" pin="1"/>
+      <node ref="D00" pin="1"/>
+      <node ref="D01" pin="1"/>
+      <node ref="D06" pin="1"/>
+      <node ref="D04" pin="1"/>
+      <node ref="D08" pin="1"/>
+      <node ref="U1" pin="19"/>
+    </net>
+    <net code="27" name="COL3">
+      <node ref="SW33" pin="1"/>
+      <node ref="U1" pin="39"/>
+      <node ref="DE13" pin="2"/>
+      <node ref="DE23" pin="2"/>
+      <node ref="DE03" pin="2"/>
+      <node ref="SW13" pin="1"/>
+      <node ref="SW23" pin="1"/>
+      <node ref="SW03" pin="1"/>
+    </net>
+    <net code="28" name="COL6">
+      <node ref="DE26" pin="2"/>
+      <node ref="SW26" pin="1"/>
+      <node ref="SW56" pin="3"/>
+      <node ref="SW46" pin="3"/>
+      <node ref="SW66" pin="3"/>
+      <node ref="U1" pin="11"/>
+      <node ref="SW06" pin="1"/>
+      <node ref="SWE04" pin="2"/>
+      <node ref="DE06" pin="2"/>
+      <node ref="SW36" pin="1"/>
+      <node ref="DE16" pin="2"/>
+    </net>
+    <net code="29" name="COL11">
+      <node ref="SWE26" pin="5"/>
+      <node ref="SW410" pin="1"/>
+      <node ref="SW610" pin="1"/>
+      <node ref="SW510" pin="1"/>
+      <node ref="SW211" pin="1"/>
+      <node ref="DE111" pin="2"/>
+      <node ref="DE011" pin="2"/>
+      <node ref="SW111" pin="1"/>
+      <node ref="U1" pin="3"/>
+      <node ref="DE211" pin="2"/>
+    </net>
+    <net code="30" name="COL13">
+      <node ref="SWE08" pin="2"/>
+      <node ref="DE013" pin="2"/>
+      <node ref="SW612" pin="1"/>
+      <node ref="SW412" pin="1"/>
+      <node ref="SWE210" pin="5"/>
+      <node ref="SW512" pin="1"/>
+      <node ref="U1" pin="4"/>
+      <node ref="DE213" pin="2"/>
+    </net>
+    <net code="31" name="COL15">
+      <node ref="SW514" pin="1"/>
+      <node ref="SW414" pin="1"/>
+      <node ref="SWE214" pin="5"/>
+      <node ref="U1" pin="5"/>
+      <node ref="SWE16" pin="5"/>
+      <node ref="DE015" pin="2"/>
+      <node ref="SW614" pin="1"/>
+      <node ref="DE215" pin="2"/>
+    </net>
+    <net code="32" name="COL0">
+      <node ref="U1" pin="8"/>
+      <node ref="SW00" pin="1"/>
+      <node ref="SW20" pin="1"/>
+      <node ref="SW10" pin="1"/>
+      <node ref="SW30" pin="1"/>
+      <node ref="DE20" pin="2"/>
+      <node ref="DE10" pin="2"/>
+      <node ref="DE00" pin="2"/>
+      <node ref="SWE20" pin="5"/>
+    </net>
+    <net code="33" name="COL2">
+      <node ref="SW02" pin="1"/>
+      <node ref="DE02" pin="2"/>
+      <node ref="DE22" pin="2"/>
+      <node ref="SW32" pin="1"/>
+      <node ref="DE12" pin="2"/>
+      <node ref="SWE10" pin="5"/>
+      <node ref="U1" pin="9"/>
+      <node ref="SW22" pin="1"/>
+    </net>
+    <net code="34" name="COL4">
+      <node ref="SW24" pin="1"/>
+      <node ref="DE04" pin="2"/>
+      <node ref="SW64" pin="3"/>
+      <node ref="SW54" pin="3"/>
+      <node ref="DE24" pin="2"/>
+      <node ref="SW44" pin="3"/>
+      <node ref="SW14" pin="1"/>
+      <node ref="U1" pin="10"/>
+      <node ref="DE14" pin="2"/>
+      <node ref="SW34" pin="1"/>
+      <node ref="SW04" pin="1"/>
+    </net>
+    <net code="35" name="ROW1">
+      <node ref="D12" pin="1"/>
+      <node ref="D114" pin="1"/>
+      <node ref="D115" pin="1"/>
+      <node ref="D112" pin="1"/>
+      <node ref="D113" pin="1"/>
+      <node ref="D16" pin="1"/>
+      <node ref="D15" pin="1"/>
+      <node ref="D13" pin="1"/>
+      <node ref="U1" pin="20"/>
+      <node ref="D110" pin="1"/>
+      <node ref="D14" pin="1"/>
+      <node ref="D111" pin="1"/>
+      <node ref="D17" pin="1"/>
+      <node ref="D18" pin="1"/>
+      <node ref="D19" pin="1"/>
+      <node ref="D11" pin="1"/>
+      <node ref="D10" pin="1"/>
+    </net>
+    <net code="36" name="COL5">
+      <node ref="SW25" pin="1"/>
+      <node ref="DE15" pin="2"/>
+      <node ref="SW05" pin="1"/>
+      <node ref="DE25" pin="2"/>
+      <node ref="SW44" pin="1"/>
+      <node ref="SW54" pin="1"/>
+      <node ref="U1" pin="40"/>
+      <node ref="SW64" pin="1"/>
+      <node ref="SWE00" pin="2"/>
+      <node ref="SW35" pin="1"/>
+      <node ref="DE05" pin="2"/>
+    </net>
+    <net code="37" name="ROW2">
+      <node ref="U1" pin="21"/>
+      <node ref="D20" pin="1"/>
+      <node ref="D22" pin="1"/>
+      <node ref="D23" pin="1"/>
+      <node ref="D29" pin="1"/>
+      <node ref="D28" pin="1"/>
+      <node ref="D211" pin="1"/>
+      <node ref="D24" pin="1"/>
+      <node ref="D21" pin="1"/>
+      <node ref="D210" pin="1"/>
+      <node ref="D25" pin="1"/>
+      <node ref="D26" pin="1"/>
+      <node ref="D212" pin="1"/>
+      <node ref="D27" pin="1"/>
+    </net>
+    <net code="38" name="COL7">
+      <node ref="DE27" pin="2"/>
+      <node ref="SW17" pin="1"/>
+      <node ref="DE07" pin="2"/>
+      <node ref="SW27" pin="1"/>
+      <node ref="U1" pin="41"/>
+      <node ref="SW46" pin="1"/>
+      <node ref="SW66" pin="1"/>
+      <node ref="SW07" pin="1"/>
+      <node ref="SW56" pin="1"/>
+      <node ref="SW37" pin="1"/>
+      <node ref="DE17" pin="2"/>
+    </net>
+    <net code="39" name="ROW3">
+      <node ref="D33" pin="1"/>
+      <node ref="D36" pin="1"/>
+      <node ref="D35" pin="1"/>
+      <node ref="D32" pin="1"/>
+      <node ref="D313" pin="1"/>
+      <node ref="D310" pin="1"/>
+      <node ref="D314" pin="1"/>
+      <node ref="D315" pin="1"/>
+      <node ref="D37" pin="1"/>
+      <node ref="U1" pin="22"/>
+      <node ref="D312" pin="1"/>
+      <node ref="D34" pin="1"/>
+      <node ref="D39" pin="1"/>
+      <node ref="D38" pin="1"/>
+      <node ref="D31" pin="1"/>
+      <node ref="D311" pin="1"/>
+      <node ref="D30" pin="1"/>
+    </net>
+    <net code="40" name="Net-(P1-Pad2)">
+      <node ref="P1" pin="2"/>
+      <node ref="U1" pin="42"/>
+    </net>
+    <net code="41" name="ROW4">
+      <node ref="D48" pin="1"/>
+      <node ref="D412" pin="1"/>
+      <node ref="D46" pin="1"/>
+      <node ref="D40" pin="1"/>
+      <node ref="D44" pin="1"/>
+      <node ref="U1" pin="23"/>
+      <node ref="D410" pin="1"/>
+      <node ref="D414" pin="1"/>
+      <node ref="D41" pin="1"/>
+    </net>
+    <net code="42" name="Net-(P1-Pad3)">
+      <node ref="P1" pin="3"/>
+      <node ref="U1" pin="43"/>
+    </net>
+    <net code="43" name="Net-(J1-Pad1)">
+      <node ref="J1" pin="1"/>
+      <node ref="U1" pin="18"/>
+      <node ref="R1" pin="2"/>
+    </net>
+    <net code="44" name="Net-(D38-Pad2)">
+      <node ref="D38" pin="2"/>
+      <node ref="SW38" pin="2"/>
+    </net>
+    <net code="45" name="Net-(D39-Pad2)">
+      <node ref="SW39" pin="2"/>
+      <node ref="D39" pin="2"/>
+    </net>
+    <net code="46" name="Net-(D314-Pad2)">
+      <node ref="D314" pin="2"/>
+      <node ref="SWE212" pin="4"/>
+    </net>
+    <net code="47" name="Net-(D315-Pad2)">
+      <node ref="SWE214" pin="4"/>
+      <node ref="D315" pin="2"/>
+    </net>
+    <net code="48" name="Net-(D312-Pad2)">
+      <node ref="D312" pin="2"/>
+      <node ref="SWE28" pin="4"/>
+    </net>
+    <net code="49" name="Net-(D313-Pad2)">
+      <node ref="SWE210" pin="4"/>
+      <node ref="D313" pin="2"/>
+    </net>
+    <net code="50" name="Net-(D35-Pad2)">
+      <node ref="D35" pin="2"/>
+      <node ref="SW35" pin="2"/>
+    </net>
+    <net code="51" name="Net-(D37-Pad2)">
+      <node ref="D37" pin="2"/>
+      <node ref="SW37" pin="2"/>
+    </net>
+    <net code="52" name="Net-(D34-Pad2)">
+      <node ref="D34" pin="2"/>
+      <node ref="SW34" pin="2"/>
+    </net>
+    <net code="53" name="Net-(D310-Pad2)">
+      <node ref="SWE24" pin="4"/>
+      <node ref="D310" pin="2"/>
+    </net>
+    <net code="54" name="Net-(D311-Pad2)">
+      <node ref="D311" pin="2"/>
+      <node ref="SWE26" pin="4"/>
+    </net>
+    <net code="55" name="Net-(D09-Pad2)">
+      <node ref="SW09" pin="2"/>
+      <node ref="D09" pin="2"/>
+    </net>
+    <net code="56" name="Net-(D20-Pad2)">
+      <node ref="SW20" pin="2"/>
+      <node ref="D20" pin="2"/>
+    </net>
+    <net code="57" name="Net-(D21-Pad2)">
+      <node ref="D21" pin="2"/>
+      <node ref="SW21" pin="2"/>
+    </net>
+    <net code="58" name="Net-(D26-Pad2)">
+      <node ref="SW26" pin="2"/>
+      <node ref="D26" pin="2"/>
+    </net>
+    <net code="59" name="Net-(D27-Pad2)">
+      <node ref="D27" pin="2"/>
+      <node ref="SW27" pin="2"/>
+    </net>
+    <net code="60" name="Net-(D24-Pad2)">
+      <node ref="SW24" pin="2"/>
+      <node ref="D24" pin="2"/>
+    </net>
+    <net code="61" name="Net-(D25-Pad2)">
+      <node ref="SW25" pin="2"/>
+      <node ref="D25" pin="2"/>
+    </net>
+    <net code="62" name="Net-(D113-Pad2)">
+      <node ref="D113" pin="2"/>
+      <node ref="SWE08" pin="3"/>
+    </net>
+    <net code="63" name="Net-(D115-Pad2)">
+      <node ref="SWE16" pin="4"/>
+      <node ref="D115" pin="2"/>
+    </net>
+    <net code="64" name="Net-(D112-Pad2)">
+      <node ref="SWE14" pin="4"/>
+      <node ref="D112" pin="2"/>
+    </net>
+    <net code="65" name="Net-(D22-Pad2)">
+      <node ref="D22" pin="2"/>
+      <node ref="SW22" pin="2"/>
+    </net>
+    <net code="66" name="Net-(D23-Pad2)">
+      <node ref="SW23" pin="2"/>
+      <node ref="D23" pin="2"/>
+    </net>
+    <net code="67" name="Net-(D30-Pad2)">
+      <node ref="D30" pin="2"/>
+      <node ref="SW30" pin="2"/>
+    </net>
+    <net code="68" name="Net-(D32-Pad2)">
+      <node ref="D32" pin="2"/>
+      <node ref="SW32" pin="2"/>
+    </net>
+    <net code="69" name="Net-(D33-Pad2)">
+      <node ref="D33" pin="2"/>
+      <node ref="SW33" pin="2"/>
+    </net>
+    <net code="70" name="Net-(D31-Pad2)">
+      <node ref="SW31" pin="2"/>
+      <node ref="D31" pin="2"/>
+    </net>
+    <net code="71" name="Net-(D36-Pad2)">
+      <node ref="D36" pin="2"/>
+      <node ref="SW36" pin="2"/>
+    </net>
+    <net code="72" name="Net-(D28-Pad2)">
+      <node ref="D28" pin="2"/>
+      <node ref="SW28" pin="2"/>
+    </net>
+    <net code="73" name="Net-(D210-Pad2)">
+      <node ref="D210" pin="2"/>
+      <node ref="SW210" pin="2"/>
+    </net>
+    <net code="74" name="Net-(D211-Pad2)">
+      <node ref="SW211" pin="2"/>
+      <node ref="D211" pin="2"/>
+    </net>
+    <net code="75" name="Net-(D29-Pad2)">
+      <node ref="D29" pin="2"/>
+      <node ref="SW29" pin="2"/>
+    </net>
+    <net code="76" name="Net-(D212-Pad2)">
+      <node ref="D212" pin="2"/>
+      <node ref="SWE18" pin="3"/>
+    </net>
+    <net code="77" name="Net-(D03-Pad2)">
+      <node ref="SW03" pin="2"/>
+      <node ref="D03" pin="2"/>
+    </net>
+    <net code="78" name="Net-(D04-Pad2)">
+      <node ref="D04" pin="2"/>
+      <node ref="SW04" pin="2"/>
+    </net>
+    <net code="79" name="Net-(D40-Pad2)">
+      <node ref="SWE20" pin="4"/>
+      <node ref="D40" pin="2"/>
+    </net>
+    <net code="80" name="Net-(D41-Pad2)">
+      <node ref="SWE22" pin="4"/>
+      <node ref="D41" pin="2"/>
+    </net>
+    <net code="81" name="Net-(D15-Pad2)">
+      <node ref="SWE00" pin="3"/>
+      <node ref="D15" pin="2"/>
+    </net>
+    <net code="82" name="Net-(D414-Pad2)">
+      <node ref="D414" pin="2"/>
+      <node ref="SW414" pin="2"/>
+    </net>
+    <net code="83" name="Net-(D514-Pad2)">
+      <node ref="D514" pin="2"/>
+      <node ref="SW514" pin="2"/>
+    </net>
+    <net code="84" name="Net-(D114-Pad2)">
+      <node ref="D114" pin="2"/>
+      <node ref="SWE012" pin="3"/>
+    </net>
+    <net code="85" name="Net-(D14-Pad2)">
+      <node ref="SW14" pin="2"/>
+      <node ref="D14" pin="2"/>
+    </net>
+    <net code="86" name="Net-(D13-Pad2)">
+      <node ref="D13" pin="2"/>
+      <node ref="SW13" pin="2"/>
+    </net>
+    <net code="87" name="Net-(D10-Pad2)">
+      <node ref="SW10" pin="2"/>
+      <node ref="D10" pin="2"/>
+    </net>
+    <net code="88" name="Net-(D11-Pad2)">
+      <node ref="SW11" pin="2"/>
+      <node ref="D11" pin="2"/>
+    </net>
+    <net code="89" name="Net-(D16-Pad2)">
+      <node ref="SWE04" pin="3"/>
+      <node ref="D16" pin="2"/>
+    </net>
+    <net code="90" name="Net-(D17-Pad2)">
+      <node ref="D17" pin="2"/>
+      <node ref="SW17" pin="2"/>
+    </net>
+    <net code="91" name="Net-(D110-Pad2)">
+      <node ref="SW110" pin="2"/>
+      <node ref="D110" pin="2"/>
+    </net>
+    <net code="92" name="Net-(D111-Pad2)">
+      <node ref="SW111" pin="2"/>
+      <node ref="D111" pin="2"/>
+    </net>
+    <net code="93" name="Net-(D18-Pad2)">
+      <node ref="SWE12" pin="4"/>
+      <node ref="D18" pin="2"/>
+    </net>
+    <net code="94" name="Net-(D19-Pad2)">
+      <node ref="SW19" pin="2"/>
+      <node ref="D19" pin="2"/>
+    </net>
+    <net code="95" name="Net-(D02-Pad2)">
+      <node ref="D02" pin="2"/>
+      <node ref="SW02" pin="2"/>
+    </net>
+    <net code="96" name="Net-(D00-Pad2)">
+      <node ref="D00" pin="2"/>
+      <node ref="SW00" pin="2"/>
+    </net>
+    <net code="97" name="Net-(D01-Pad2)">
+      <node ref="SW01" pin="2"/>
+      <node ref="D01" pin="2"/>
+    </net>
+    <net code="98" name="Net-(D06-Pad2)">
+      <node ref="SW06" pin="2"/>
+      <node ref="D06" pin="2"/>
+    </net>
+    <net code="99" name="Net-(D07-Pad2)">
+      <node ref="D07" pin="2"/>
+      <node ref="SW07" pin="2"/>
+    </net>
+    <net code="100" name="Net-(D05-Pad2)">
+      <node ref="SW05" pin="2"/>
+      <node ref="D05" pin="2"/>
+    </net>
+    <net code="101" name="Net-(D08-Pad2)">
+      <node ref="SW08" pin="2"/>
+      <node ref="D08" pin="2"/>
+    </net>
+    <net code="102" name="Net-(D12-Pad2)">
+      <node ref="SWE10" pin="4"/>
+      <node ref="D12" pin="2"/>
+    </net>
+    <net code="103" name="Net-(D610-Pad2)">
+      <node ref="D610" pin="2"/>
+      <node ref="SW610" pin="2"/>
+    </net>
+    <net code="104" name="Net-(D410-Pad2)">
+      <node ref="SW410" pin="2"/>
+      <node ref="D410" pin="2"/>
+    </net>
+    <net code="105" name="Net-(D510-Pad2)">
+      <node ref="SW510" pin="2"/>
+      <node ref="D510" pin="2"/>
+    </net>
+    <net code="106" name="Net-(D48-Pad2)">
+      <node ref="D48" pin="2"/>
+      <node ref="SW48" pin="2"/>
+    </net>
+    <net code="107" name="Net-(D58-Pad2)">
+      <node ref="D58" pin="2"/>
+      <node ref="SW58" pin="2"/>
+    </net>
+    <net code="108" name="Net-(D614-Pad2)">
+      <node ref="D614" pin="2"/>
+      <node ref="SW614" pin="2"/>
+    </net>
+    <net code="109" name="Net-(D412-Pad2)">
+      <node ref="D412" pin="2"/>
+      <node ref="SW412" pin="2"/>
+    </net>
+    <net code="110" name="Net-(D512-Pad2)">
+      <node ref="D512" pin="2"/>
+      <node ref="SW512" pin="2"/>
+    </net>
+    <net code="111" name="Net-(D612-Pad2)">
+      <node ref="SW612" pin="2"/>
+      <node ref="D612" pin="2"/>
+    </net>
+    <net code="112" name="Net-(D54-Pad2)">
+      <node ref="SW54" pin="2"/>
+      <node ref="D54" pin="2"/>
+    </net>
+    <net code="113" name="Net-(D66-Pad2)">
+      <node ref="D66" pin="2"/>
+      <node ref="SW66" pin="2"/>
+    </net>
+    <net code="114" name="Net-(D44-Pad2)">
+      <node ref="D44" pin="2"/>
+      <node ref="SW44" pin="2"/>
+    </net>
+    <net code="115" name="Net-(D64-Pad2)">
+      <node ref="SW64" pin="2"/>
+      <node ref="D64" pin="2"/>
+    </net>
+    <net code="116" name="Net-(D68-Pad2)">
+      <node ref="SW68" pin="2"/>
+      <node ref="D68" pin="2"/>
+    </net>
+    <net code="117" name="Net-(D46-Pad2)">
+      <node ref="D46" pin="2"/>
+      <node ref="SW46" pin="2"/>
+    </net>
+    <net code="118" name="Net-(D56-Pad2)">
+      <node ref="SW56" pin="2"/>
+      <node ref="D56" pin="2"/>
+    </net>
+    <net code="119" name="Net-(DE16-Pad1)">
+      <node ref="SWE16" pin="3"/>
+      <node ref="DE16" pin="1"/>
+    </net>
+    <net code="120" name="Net-(DE24-Pad1)">
+      <node ref="DE24" pin="1"/>
+      <node ref="SWE24" pin="3"/>
+    </net>
+    <net code="121" name="Net-(DE25-Pad1)">
+      <node ref="DE25" pin="1"/>
+      <node ref="SWE24" pin="1"/>
+    </net>
+    <net code="122" name="Net-(DE22-Pad1)">
+      <node ref="DE22" pin="1"/>
+      <node ref="SWE22" pin="3"/>
+    </net>
+    <net code="123" name="Net-(DE23-Pad1)">
+      <node ref="DE23" pin="1"/>
+      <node ref="SWE22" pin="1"/>
+    </net>
+    <net code="124" name="Net-(DE20-Pad1)">
+      <node ref="DE20" pin="1"/>
+      <node ref="SWE20" pin="3"/>
+    </net>
+    <net code="125" name="Net-(DE21-Pad1)">
+      <node ref="SWE20" pin="1"/>
+      <node ref="DE21" pin="1"/>
+    </net>
+    <net code="126" name="Net-(DE27-Pad1)">
+      <node ref="DE27" pin="1"/>
+      <node ref="SWE26" pin="1"/>
+    </net>
+    <net code="127" name="Net-(DE17-Pad1)">
+      <node ref="DE17" pin="1"/>
+      <node ref="SWE16" pin="1"/>
+    </net>
+    <net code="128" name="Net-(DE14-Pad1)">
+      <node ref="DE14" pin="1"/>
+      <node ref="SWE14" pin="3"/>
+    </net>
+    <net code="129" name="Net-(DE15-Pad1)">
+      <node ref="DE15" pin="1"/>
+      <node ref="SWE14" pin="1"/>
+    </net>
+    <net code="130" name="Net-(DE12-Pad1)">
+      <node ref="DE12" pin="1"/>
+      <node ref="SWE12" pin="3"/>
+    </net>
+    <net code="131" name="Net-(DE13-Pad1)">
+      <node ref="SWE12" pin="1"/>
+      <node ref="DE13" pin="1"/>
+    </net>
+    <net code="132" name="Net-(DE213-Pad1)">
+      <node ref="DE213" pin="1"/>
+      <node ref="SWE212" pin="1"/>
+    </net>
+    <net code="133" name="Net-(DE111-Pad1)">
+      <node ref="DE111" pin="1"/>
+      <node ref="SWE18" pin="5"/>
+    </net>
+    <net code="134" name="Net-(DE110-Pad1)">
+      <node ref="DE110" pin="1"/>
+      <node ref="SWE18" pin="1"/>
+    </net>
+    <net code="135" name="Net-(DE214-Pad1)">
+      <node ref="DE214" pin="1"/>
+      <node ref="SWE214" pin="3"/>
+    </net>
+    <net code="136" name="Net-(DE215-Pad1)">
+      <node ref="SWE214" pin="1"/>
+      <node ref="DE215" pin="1"/>
+    </net>
+    <net code="137" name="Net-(DE212-Pad1)">
+      <node ref="SWE212" pin="3"/>
+      <node ref="DE212" pin="1"/>
+    </net>
+    <net code="138" name="Net-(DE10-Pad1)">
+      <node ref="SWE10" pin="3"/>
+      <node ref="DE10" pin="1"/>
+    </net>
+    <net code="139" name="Net-(DE210-Pad1)">
+      <node ref="SWE210" pin="3"/>
+      <node ref="DE210" pin="1"/>
+    </net>
+    <net code="140" name="Net-(DE211-Pad1)">
+      <node ref="DE211" pin="1"/>
+      <node ref="SWE210" pin="1"/>
+    </net>
+    <net code="141" name="Net-(DE28-Pad1)">
+      <node ref="SWE28" pin="3"/>
+      <node ref="DE28" pin="1"/>
+    </net>
+    <net code="142" name="Net-(DE29-Pad1)">
+      <node ref="DE29" pin="1"/>
+      <node ref="SWE28" pin="1"/>
+    </net>
+    <net code="143" name="Net-(DE26-Pad1)">
+      <node ref="DE26" pin="1"/>
+      <node ref="SWE26" pin="3"/>
+    </net>
+    <net code="144" name="Net-(DE11-Pad1)">
+      <node ref="SWE10" pin="1"/>
+      <node ref="DE11" pin="1"/>
+    </net>
+    <net code="145" name="Net-(DE015-Pad1)">
+      <node ref="DE015" pin="1"/>
+      <node ref="SWE012" pin="5"/>
+    </net>
+    <net code="146" name="Net-(DE014-Pad1)">
+      <node ref="DE014" pin="1"/>
+      <node ref="SWE012" pin="1"/>
+    </net>
+    <net code="147" name="Net-(DE011-Pad1)">
+      <node ref="SWE08" pin="5"/>
+      <node ref="DE011" pin="1"/>
+    </net>
+    <net code="148" name="Net-(DE010-Pad1)">
+      <node ref="DE010" pin="1"/>
+      <node ref="SWE08" pin="1"/>
+    </net>
+    <net code="149" name="Net-(DE07-Pad1)">
+      <node ref="SWE04" pin="5"/>
+      <node ref="DE07" pin="1"/>
+    </net>
+    <net code="150" name="Net-(DE06-Pad1)">
+      <node ref="SWE04" pin="1"/>
+      <node ref="DE06" pin="1"/>
+    </net>
+    <net code="151" name="Net-(DE03-Pad1)">
+      <node ref="SWE00" pin="5"/>
+      <node ref="DE03" pin="1"/>
+    </net>
+    <net code="152" name="Net-(DE02-Pad1)">
+      <node ref="DE02" pin="1"/>
+      <node ref="SWE00" pin="1"/>
+    </net>
+    <net code="153" name="Net-(DE012-Pad1)">
+      <node ref="SWE012" pin="6"/>
+      <node ref="DE012" pin="1"/>
+    </net>
+    <net code="154" name="Net-(DE18-Pad1)">
+      <node ref="SWE18" pin="6"/>
+      <node ref="DE18" pin="1"/>
+    </net>
+    <net code="155" name="Net-(DE19-Pad1)">
+      <node ref="DE19" pin="1"/>
+      <node ref="SWE18" pin="10"/>
+    </net>
+    <net code="156" name="Net-(DE04-Pad1)">
+      <node ref="SWE04" pin="6"/>
+      <node ref="DE04" pin="1"/>
+    </net>
+    <net code="157" name="Net-(DE05-Pad1)">
+      <node ref="SWE04" pin="10"/>
+      <node ref="DE05" pin="1"/>
+    </net>
+    <net code="158" name="Net-(DE00-Pad1)">
+      <node ref="DE00" pin="1"/>
+      <node ref="SWE00" pin="6"/>
+    </net>
+    <net code="159" name="Net-(DE01-Pad1)">
+      <node ref="DE01" pin="1"/>
+      <node ref="SWE00" pin="10"/>
+    </net>
+    <net code="160" name="Net-(DE08-Pad1)">
+      <node ref="DE08" pin="1"/>
+      <node ref="SWE08" pin="6"/>
+    </net>
+    <net code="161" name="Net-(DE013-Pad1)">
+      <node ref="DE013" pin="1"/>
+      <node ref="SWE012" pin="10"/>
+    </net>
+    <net code="162" name="Net-(DE09-Pad1)">
+      <node ref="DE09" pin="1"/>
+      <node ref="SWE08" pin="10"/>
+    </net>
+  </nets>
+</export>
