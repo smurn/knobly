@@ -38,7 +38,7 @@ static uint8_t current_state = 0;
 // @param raw: Unbounced button state.
 // @param group: Button group id. Used to access the internal state
 //    of the debouncer.
-static uint8_t debounce_btn_group(uint8_t raw, uint8_t previous, uint8_t group){
+static uint8_t debounce_btn_group(uint8_t raw, uint8_t previous, uint8_t group, uint8_t* dest_dirty){
     
     //return raw;
     
@@ -52,7 +52,7 @@ static uint8_t debounce_btn_group(uint8_t raw, uint8_t previous, uint8_t group){
         one_on |= s;
     }
     //uint8_t debounced = all_on | (previous & one_on);
-    
+    *dest_dirty |= all_on ^ previous;
     return all_on;
 }
 
@@ -177,8 +177,8 @@ void kblymatrix_scan(){
             current_state++;
             if (current_state >= N_STATES) current_state = 0;
             
-            kblyhid_joystick0.a = debounce_btn_group(raw_a, kblyhid_joystick0.a, 0);
-            kblyhid_joystick0.b = debounce_btn_group(raw_b, kblyhid_joystick0.b, 1);
+            kblyhid_joystick0.a = debounce_btn_group(raw_a, kblyhid_joystick0.a, 0, &kblyhid_js0_dirty);
+            kblyhid_joystick0.b = debounce_btn_group(raw_b, kblyhid_joystick0.b, 1, &kblyhid_js0_dirty);
             LATAbits.LATA0 = 1; // Disable Row0
             LATEbits.LATE0 = 0; // Enable Enc0
             break;
@@ -202,8 +202,8 @@ void kblymatrix_scan(){
             break;
 
         case 4: // row1
-            kblyhid_joystick0.c = debounce_btn_group(raw_a, kblyhid_joystick0.c, 2);
-            kblyhid_joystick0.d = debounce_btn_group(raw_b, kblyhid_joystick0.d, 3);
+            kblyhid_joystick0.c = debounce_btn_group(raw_a, kblyhid_joystick0.c, 2, &kblyhid_js0_dirty);
+            kblyhid_joystick0.d = debounce_btn_group(raw_b, kblyhid_joystick0.d, 3, &kblyhid_js0_dirty);
             LATAbits.LATA1 = 1; // Disable Row1
             LATEbits.LATE0 = 0; // Enable Enc0
             break;
@@ -227,8 +227,8 @@ void kblymatrix_scan(){
             break;
 
         case 8: // row2
-            kblyhid_joystick1.a = debounce_btn_group(raw_a, kblyhid_joystick1.a, 4);
-            kblyhid_joystick1.b = debounce_btn_group(raw_b, kblyhid_joystick1.b, 5);
+            kblyhid_joystick1.a = debounce_btn_group(raw_a, kblyhid_joystick1.a, 4, &kblyhid_js1_dirty);
+            kblyhid_joystick1.b = debounce_btn_group(raw_b, kblyhid_joystick1.b, 5, &kblyhid_js1_dirty);
             LATAbits.LATA2 = 1; // Disable Row2
             LATEbits.LATE0 = 0; // Enable Enc0
             break;
@@ -252,8 +252,8 @@ void kblymatrix_scan(){
             break;
 
         case 12: // row3
-            kblyhid_joystick1.c = debounce_btn_group(raw_a, kblyhid_joystick1.c, 6);
-            kblyhid_joystick1.d = debounce_btn_group(raw_b, kblyhid_joystick1.d, 7);
+            kblyhid_joystick1.c = debounce_btn_group(raw_a, kblyhid_joystick1.c, 6, &kblyhid_js1_dirty);
+            kblyhid_joystick1.d = debounce_btn_group(raw_b, kblyhid_joystick1.d, 7, &kblyhid_js1_dirty);
             LATAbits.LATA3 = 1; // Disable Row3
             LATEbits.LATE0 = 0; // Enable Enc0
             break;
@@ -277,8 +277,8 @@ void kblymatrix_scan(){
             break;
 
         case 16: // row4
-            kblyhid_joystick2.a = debounce_btn_group(raw_a, kblyhid_joystick2.a, 8);
-            kblyhid_joystick2.b = debounce_btn_group(raw_b, kblyhid_joystick2.b, 9);
+            kblyhid_joystick2.a = debounce_btn_group(raw_a, kblyhid_joystick2.a, 8, &kblyhid_js2_dirty);
+            kblyhid_joystick2.b = debounce_btn_group(raw_b, kblyhid_joystick2.b, 9, &kblyhid_js2_dirty);
             LATAbits.LATA4 = 1; // Disable Row4
             LATEbits.LATE0 = 0; // Enable Enc0
             break;
@@ -302,8 +302,8 @@ void kblymatrix_scan(){
             break;
 
         case 20: // row5
-            kblyhid_joystick2.c = debounce_btn_group(raw_a, kblyhid_joystick2.c, 10);
-            kblyhid_joystick2.d = debounce_btn_group(raw_b, kblyhid_joystick2.d, 11);
+            kblyhid_joystick2.c = debounce_btn_group(raw_a, kblyhid_joystick2.c, 10, &kblyhid_js2_dirty);
+            kblyhid_joystick2.d = debounce_btn_group(raw_b, kblyhid_joystick2.d, 11, &kblyhid_js2_dirty);
             LATAbits.LATA5 = 1; // Disable Row5
             LATEbits.LATE0 = 0; // Enable Enc0
             break;
@@ -327,8 +327,8 @@ void kblymatrix_scan(){
             break;
 
         case 24: // row6
-            kblyhid_joystick3.a = debounce_btn_group(raw_a, kblyhid_joystick3.a, 12);
-            kblyhid_joystick3.b = debounce_btn_group(raw_b, kblyhid_joystick3.b, 13);
+            kblyhid_joystick3.a = debounce_btn_group(raw_a, kblyhid_joystick3.a, 12, &kblyhid_js3_dirty);
+            kblyhid_joystick3.b = debounce_btn_group(raw_b, kblyhid_joystick3.b, 13, &kblyhid_js3_dirty);
             LATCbits.LATC1 = 1; // Disable Row6
             LATEbits.LATE0 = 0; // Enable Enc0
             break;

@@ -28,7 +28,7 @@ static USB_VOLATILE USB_HANDLE prev_transmission = 0;
 
 static USB_VOLATILE uint8_t next = 0;
 
-void kblyhid_init(){
+void kblyhid_init(void){
     kblyhid_joystick0.report_id = 1;
     kblyhid_joystick0.a = 0x00;
     kblyhid_joystick0.b = 0x00;
@@ -59,110 +59,129 @@ void kblyhid_init(){
     kblyhid_joystick4.c = 0x00;
     kblyhid_joystick4.d = 0x00;
 }
-/*
-void kblyhid_enable(){
-    USBEnableEndpoint(JOYSTICK_EP,
-            USB_IN_ENABLED|USB_HANDSHAKE_ENABLED|USB_DISALLOW_SETUP); 
-    
-    //kblyhid_ontransfer();
-}
 
-void kblyhid_loop(){
-    // We have to kick-start the transfers. We normally start them
-    // once the previous one has finished using an interrupt, but somewhere
-    // we got to start the first one. 
-    kblyhid_ontransfer();
-}
-
-static bool flag = false;
-
-*/
-
-void kblyhid_ontransfer(){
+void kblyhid_loop(void){
     
+    // Disable interrupts. 
+    di();
     
-    
-    // disable high prio interrupt until we are done here.
-    // We cal this method from the USB interrupt as well as from the
-    // low-prio timer (as a fall back). Make sure they don't step on each
-    // other.
-    //INTCONbits.GIEH = 0;
-    
-    
-    if((USBDeviceState < CONFIGURED_STATE)||(USBSuspendControl==1)) return;
-    
-    
-    // disable high prio interrupt until we are done here.
-    //INTCONbits.GIEH = 0;
-    
-
-    if (HIDTxHandleBusy(prev_transmission)){
-        //INTCONbits.GIEH = 1;
-        return;
-    }
-    
-    
-    
-    
-    //flag = !flag;
-    //LATCbits.LC6 = flag;
-
-    kblyhid_Report* report = NULL;
-    
-    // If one is marked as dirty, we send that one.
-    
-    if (kblyhid_js0_dirty){
-        report = &kblyhid_joystick0;
-        kblyhid_js0_dirty = 0x00;
-    }
-    if (kblyhid_js1_dirty){
-        report = &kblyhid_joystick1;
-        kblyhid_js1_dirty = 0x00;
-    }
-    if (kblyhid_js2_dirty){
-        report = &kblyhid_joystick2;
-        kblyhid_js2_dirty = 0x00;
-    }
-    if (kblyhid_js3_dirty){
-        report = &kblyhid_joystick3;
-        kblyhid_js3_dirty = 0x00;
-    }
-    if (kblyhid_js4_dirty){
-        report = &kblyhid_joystick4;
-        kblyhid_js4_dirty = 0x00;
-    }
-    
-    // None are marked dirty, send them round-robin
-    
-    if (report == NULL){
+    // Using do {} while (0) as a try/finally construct.
+    do{
+        
+        if (USBDeviceState < CONFIGURED_STATE){
+            // USB is not ready for transfers yet.
+            break;
+        }
+        
+        if (USBSuspendControl == 1){
+            // Device is suspended. Host won't receive data.
+            break;
+        }
+        
+        if (HIDTxHandleBusy(prev_transmission)){
+            // The previous transfer is still in progress.
+            break;
+        }
         
         next++;
         if (next >= 5) next = 0;
         
         switch(next){
         case 0:
-            report = &kblyhid_joystick0;
+            report_buffer = kblyhid_joystick0;
             break;    
         case 1:
-            report = &kblyhid_joystick1;
+            report_buffer = kblyhid_joystick1;
             break;   
         case 2:
-            report = &kblyhid_joystick2;
+            report_buffer = kblyhid_joystick2;
             break;   
         case 3:
-            report = &kblyhid_joystick3;
+            report_buffer = kblyhid_joystick3;
             break;   
         case 4:
-            report = &kblyhid_joystick4;
+            report_buffer = kblyhid_joystick4;
             break;   
         }
-    }
+        
+        // Transmit.
+        prev_transmission = HIDTxPacket(JOYSTICK_EP, 
+                (uint8_t*)&report_buffer, sizeof(kblyhid_Report));
+        
+    }while (0);
+    
+    // Enable interrupts.
+    ei();
+}
 
-    report_buffer = *report;
+void kblyhid_flush(void){
+    kblyhid_ontransfer();
+}
 
-    prev_transmission = HIDTxPacket(JOYSTICK_EP, 
-            (uint8_t*)&report_buffer, sizeof(kblyhid_Report));
+// Sends a dirty report to the host.
+// Invoked when a previous transfer has finished (EREVENT_TRANSFER) or
+// after we scanned the button matrix (via kblyhid_flush).
+void kblyhid_ontransfer(void){
+    // Disable interrupts. 
+    di();
+    
+    // Using do {} while (0) as a try/finally construct.
+    do{
+        
+        if (USBDeviceState < CONFIGURED_STATE){
+            // USB is not ready for transfers yet.
+            break;
+        }
+        
+        if (USBSuspendControl == 1){
+            // Device is suspended. Host won't receive data.
+            break;
+        }
+        
+        if (HIDTxHandleBusy(prev_transmission)){
+            // The previous transfer is still in progress.
+            break;
+        }
+        
+        kblyhid_Report* report = NULL;
 
-    // reenable high prio interrupt.
-    //INTCONbits.GIEH = 1;
+        // Find a dirty report to send.
+        if (kblyhid_js0_dirty){
+            report = &kblyhid_joystick0;
+            kblyhid_js0_dirty = 0x00;
+        }
+        if (kblyhid_js1_dirty){
+            report = &kblyhid_joystick1;
+            kblyhid_js1_dirty = 0x00;
+        }
+        if (kblyhid_js2_dirty){
+            report = &kblyhid_joystick2;
+            kblyhid_js2_dirty = 0x00;
+        }
+        if (kblyhid_js3_dirty){
+            report = &kblyhid_joystick3;
+            kblyhid_js3_dirty = 0x00;
+        }
+        if (kblyhid_js4_dirty){
+            report = &kblyhid_joystick4;
+            kblyhid_js4_dirty = 0x00;
+        }
+
+        if (report == NULL){
+            // All reports are clean.
+            break;
+        }
+        
+        // Copy the report we've selected to the memory region accessable
+        // by the USB controller.
+        report_buffer = *report;
+        
+        // Transmit.
+        prev_transmission = HIDTxPacket(JOYSTICK_EP, 
+                (uint8_t*)&report_buffer, sizeof(kblyhid_Report));
+      
+    } while (0);
+    
+    // Enable interrupts.
+    ei();
 }

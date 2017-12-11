@@ -25,9 +25,10 @@ please contact mla_licensing@microchip.com
 #include "kbly_config.h"
 #include "device_config.h"
 #include <string.h>
+#include <xc.h>
 
 void init(void){
-    // Configure Timer2 we use its interrupt this to scan the inputs
+    // Configure Timer2, we use its interrupt this to scan the inputs
     T2CONbits.TMR2ON = 1;   // Timer2 ON
     T2CONbits.T2CKPS0 = 0;  // Prescale /16
     T2CONbits.T2CKPS1 = 1;
@@ -43,6 +44,19 @@ void init(void){
 #if KBLY_SCAN_INTERVAL * 12 / 16 >= 255
 #error "scan interval too long. Adjust prescaler."
 #endif
+    
+    // Configure Timer0, we its interrupts to periodically send reports,
+    // even if they haven't changed.
+    T0CONbits.T0CS = 0;     // Timer mode
+    T0CONbits.PSA = 0;      // Enable pre-scaler
+    T0CONbits.TMR0ON = 1;   // Timer0 ON
+    T0CONbits.T0PS2 = 1;    // /256 prescaler
+    T0CONbits.T0PS1 = 1;
+    T0CONbits.T0PS0 = 1;
+    T0CONbits.T08BIT = 0;   // 16-bit-counter 
+    INTCONbits.TMR0IF = 0;  // Clear interrupt
+    INTCON2bits.TMR0IP = 0; // Low-priority
+    INTCONbits.TMR0IE = 1;  // Enable interrupt
 
     // Enable interrupt handling
     RCONbits.IPEN = 1;      // High and low priority interrupts.
@@ -107,9 +121,13 @@ void main(void)
 
 void interrupt low_priority low_prio_interrupt(void){
     if (PIR1bits.TMR2IF){        
-        kblyhid_ontransfer();
         kblymatrix_scan();
+        kblyhid_flush();
         PIR1bits.TMR2IF = 0;
+    }
+    if (INTCONbits.TMR0IF){ 
+        kblyhid_loop();
+        INTCONbits.TMR0IF = 0;
     }
 }
 

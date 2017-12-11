@@ -48,6 +48,7 @@ bool USER_USB_CALLBACK_EVENT_HANDLER(USB_EVENT event, void *pdata, uint16_t size
     switch( (int) event )
     {
         case EVENT_TRANSFER:
+            kblyhid_ontransfer();
             break;
 
         case EVENT_SOF:
@@ -61,7 +62,6 @@ bool USER_USB_CALLBACK_EVENT_HANDLER(USB_EVENT event, void *pdata, uint16_t size
 
         case EVENT_CONFIGURED:
             USBEnableEndpoint(JOYSTICK_EP,USB_IN_ENABLED|USB_HANDSHAKE_ENABLED|USB_DISALLOW_SETUP);
-            kblyhid_ontransfer();
             break;
 
         case EVENT_SET_DESCRIPTOR:

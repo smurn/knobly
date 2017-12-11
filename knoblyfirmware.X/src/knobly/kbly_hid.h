@@ -42,23 +42,24 @@ extern uint8_t kblyhid_js4_dirty;
 /*
  * Initializes the data structures.
  */
-void kblyhid_init();
-
-/*
- * Enables the HID endpoint.
- */
-void kblyhid_enable();
+void kblyhid_init(void);
 
 /**
  * Invoke this whenever a transfer has completed.
  */
-void kblyhid_ontransfer();
+void kblyhid_ontransfer(void);
+
+/**
+ * Send dirty reports to host.
+ * Invoke this after making changes to the reports.
+ */
+void kblyhid_flush(void);
 
 /**
  * Invoke regularly. Interval does not matter much, won't take 
  * more than a few cycles.
  */
-void kblyhid_loop();
+void kblyhid_loop(void);
 
 #endif // _KBLY_HID_H_
 
