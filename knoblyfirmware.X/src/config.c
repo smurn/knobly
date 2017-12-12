@@ -1,4 +1,3 @@
-
 // PIC18F2458 Configuration Bit Settings
 
 // 'C' source line config statements
