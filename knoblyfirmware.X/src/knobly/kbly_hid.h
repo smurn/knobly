@@ -65,18 +65,21 @@ void kblyhid_init(void);
 
 /**
  * Invoke this whenever a transfer has completed.
+ * Must only be invoked from a low-prio interrupt.
  */
 void kblyhid_ontransfer(void);
 
 /**
  * Send dirty reports to host.
  * Invoke this after making changes to the reports.
+ * Must only be invoked from a low-prio interrupt.
  */
 void kblyhid_flush(void);
 
 /**
- * Invoke regularly. Interval does not matter much, won't take 
- * more than a few cycles.
+ * Invoke regularly. this will send a report to the host, even if there wasn't
+ * a change.
+ * Must only be invoked from a low-prio interrupt.
  */
 void kblyhid_loop(void);
 

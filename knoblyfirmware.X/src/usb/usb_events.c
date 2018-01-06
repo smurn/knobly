@@ -48,7 +48,11 @@ bool USER_USB_CALLBACK_EVENT_HANDLER(USB_EVENT event, void *pdata, uint16_t size
     switch( (int) event )
     {
         case EVENT_TRANSFER:
-            kblyhid_ontransfer();
+            // Transfer finished. We want to call kblyhid_ontransfer(), but
+            // since we are in a high-prio interrupt, we don't call it directly.
+            // Instead, we trigger a low-prio interrupt that will make the call
+            // for us.
+            PIR1bits.TMR1IF = 1;
             break;
 
         case EVENT_SOF:

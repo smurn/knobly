@@ -45,6 +45,7 @@ kblyhid_Report report_buffer @ JOYSTICK_DATA_ADDRESS;
 // Handle for transmissions to the host.
 static USB_VOLATILE USB_HANDLE prev_transmission = 0;
 
+// Next report to send in round robin fashion.
 static USB_VOLATILE uint8_t next = 0;
 
 void kblyhid_init(void){
@@ -79,32 +80,49 @@ void kblyhid_init(void){
     kblyhid_joystick4.d = 0x00;
 }
 
-void kblyhid_loop(void){
+
+// Sends a report to the host. If there is a dirty report, we'll send that one.
+// If not, then we send either send a report in round-robin fashin or we don't
+// send a report at all.
+static void send_report(bool round_robin){
+
+    if (USBDeviceState < CONFIGURED_STATE){
+        // USB is not ready for transfers yet.
+        return;
+    }
+
+    if (USBSuspendControl == 1){
+        // Device is suspended. Host won't receive data.
+        return;
+    }
+
+    if (HIDTxHandleBusy(prev_transmission)){
+        // The previous transfer is still in progress.
+        return;
+    }
     
-    // Disable interrupts. 
-    di();
-    
-    // Using do {} while (0) as a try/finally construct.
-    do{
+    // Find a dirty report to send.
+    if (kblyhid_js0_dirty){
+        report_buffer = kblyhid_joystick0;
+        kblyhid_js0_dirty = 0x00;
+    }else if (kblyhid_js1_dirty){
+        report_buffer = kblyhid_joystick1;
+        kblyhid_js1_dirty = 0x00;
+    }else if (kblyhid_js2_dirty){
+        report_buffer = kblyhid_joystick2;
+        kblyhid_js2_dirty = 0x00;
+    }else if (kblyhid_js3_dirty){
+        report_buffer = kblyhid_joystick3;
+        kblyhid_js3_dirty = 0x00;
+    }else if (kblyhid_js4_dirty){
+        report_buffer = kblyhid_joystick4;
+        kblyhid_js4_dirty = 0x00;
         
-        if (USBDeviceState < CONFIGURED_STATE){
-            // USB is not ready for transfers yet.
-            break;
-        }
-        
-        if (USBSuspendControl == 1){
-            // Device is suspended. Host won't receive data.
-            break;
-        }
-        
-        if (HIDTxHandleBusy(prev_transmission)){
-            // The previous transfer is still in progress.
-            break;
-        }
+    }else if (round_robin){
         
         next++;
         if (next >= 5) next = 0;
-        
+
         switch(next){
         case 0:
             report_buffer = kblyhid_joystick0;
@@ -123,84 +141,34 @@ void kblyhid_loop(void){
             break;   
         }
         
-        // Transmit.
-        prev_transmission = HIDTxPacket(JOYSTICK_EP, 
-                (uint8_t*)&report_buffer, sizeof(kblyhid_Report));
-        
-    }while (0);
-    
-    // Enable interrupts.
-    ei();
+    }else{
+        return; // Nothing to send
+    }
+
+    // Transmit. 
+    prev_transmission = HIDTxPacket(JOYSTICK_EP, 
+            (uint8_t*)&report_buffer, sizeof(kblyhid_Report));
+
+}
+
+void kblyhid_loop(void){
+    send_report(true);
 }
 
 void kblyhid_flush(void){
-    kblyhid_ontransfer();
+    
+    // Send the first dirty report. If there are multiple, kblyhid_ontransfer()
+    // will send those one after the other.
+    send_report(false);
 }
 
 // Sends a dirty report to the host.
 // Invoked when a previous transfer has finished (EREVENT_TRANSFER) or
 // after we scanned the button matrix (via kblyhid_flush).
 void kblyhid_ontransfer(void){
-    // Disable interrupts. 
-    di();
     
-    // Using do {} while (0) as a try/finally construct.
-    do{
-        
-        if (USBDeviceState < CONFIGURED_STATE){
-            // USB is not ready for transfers yet.
-            break;
-        }
-        
-        if (USBSuspendControl == 1){
-            // Device is suspended. Host won't receive data.
-            break;
-        }
-        
-        if (HIDTxHandleBusy(prev_transmission)){
-            // The previous transfer is still in progress.
-            break;
-        }
-        
-        kblyhid_Report* report = NULL;
-
-        // Find a dirty report to send.
-        if (kblyhid_js0_dirty){
-            report = &kblyhid_joystick0;
-            kblyhid_js0_dirty = 0x00;
-        }
-        if (kblyhid_js1_dirty){
-            report = &kblyhid_joystick1;
-            kblyhid_js1_dirty = 0x00;
-        }
-        if (kblyhid_js2_dirty){
-            report = &kblyhid_joystick2;
-            kblyhid_js2_dirty = 0x00;
-        }
-        if (kblyhid_js3_dirty){
-            report = &kblyhid_joystick3;
-            kblyhid_js3_dirty = 0x00;
-        }
-        if (kblyhid_js4_dirty){
-            report = &kblyhid_joystick4;
-            kblyhid_js4_dirty = 0x00;
-        }
-
-        if (report == NULL){
-            // All reports are clean.
-            break;
-        }
-        
-        // Copy the report we've selected to the memory region accessable
-        // by the USB controller.
-        report_buffer = *report;
-        
-        // Transmit.
-        prev_transmission = HIDTxPacket(JOYSTICK_EP, 
-                (uint8_t*)&report_buffer, sizeof(kblyhid_Report));
-      
-    } while (0);
-    
-    // Enable interrupts.
-    ei();
+    // Send out the next dirty report, if there is one.
+    send_report(false);
 }
+
+

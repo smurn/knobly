@@ -37,13 +37,22 @@ void init(void){
     T2CONbits.T2OUTPS2 = 0;
     T2CONbits.T2OUTPS3 = 0;
     PR2 = KBLY_SCAN_INTERVAL * 12 / 16;
-    PIE1bits.TMR2IE = 1;    // Enable Interrupt
     IPR1bits.TMR2IP = 0;    // Low-Priority
     PIR1bits.TMR2IF = 0;    // Clear the interrupt
+    PIE1bits.TMR2IE = 1;    // Enable Interrupt
     
 #if KBLY_SCAN_INTERVAL * 12 / 16 >= 255
 #error "scan interval too long. Adjust prescaler."
 #endif
+    
+    
+    // Configure Timer1 for use as a software interrupt.
+    // We aren't going to turn on the timer at all. 
+    T1CONbits.TMR1ON = 0;   // Timer off
+    IPR1bits.TMR1IP = 0;    // Low-Priority
+    PIR1bits.TMR1IF = 0;     // Clear the interrupt
+    PIE1bits.TMR1IE = 1;    // Enable the interupt.
+    
     
     // Configure Timer0, we its interrupts to periodically send reports,
     // even if they haven't changed.
@@ -58,6 +67,7 @@ void init(void){
     INTCON2bits.TMR0IP = 0; // Low-priority
     INTCONbits.TMR0IE = 1;  // Enable interrupt
 
+    
     // Enable interrupt handling
     RCONbits.IPEN = 1;      // High and low priority interrupts.
     INTCONbits.GIEL = 1;    // Enable low prio interrupts.
@@ -97,6 +107,10 @@ void interrupt low_priority low_prio_interrupt(void){
     if (INTCONbits.TMR0IF){ 
         kblyhid_loop();
         INTCONbits.TMR0IF = 0;
+    }
+    if (PIR1bits.TMR1IF){
+        kblyhid_ontransfer();
+        PIR1bits.TMR1IF = 0;
     }
 }
 
