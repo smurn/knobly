@@ -1,0 +1,30 @@
+M2018ES2G13
+ELMA E37
+PEC11R
+TL1105SPF160Q 
+ELMA 020-3425, 040-3025
+M701-330442
+PPPC061LFBN-RC
+FOXSLF/200-20
+PIC18F
+passives
+
+PCB  115 x 312
+Front 144 x 327
+
+0.3937
+
+
+topleft 102   45		
+usb	113.6  109.6		11.6	64.6
+socket  106.6  103.38		 4.0    58.38
+
+
+Oberseite PCB - Oberseite Front: 16mm
+Dicke Front: 1.6mm
+Oberseite PCB - Unterseide Front: 14.4mm
+
+
+
+0.6
+0.3

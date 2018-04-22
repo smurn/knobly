@@ -1,0 +1,22 @@
+PCB Thickness 1.6mm
+Panel Thickness 2mmm
+
+Distance top PCB to top panel: 16mm
+Distance bottom PCB to bottom Panel: 16+1.6-2.0 = 15.6
+Air behind PCB: 5mm
+Depth case inside: 21mm
+Thickness backcover: 5mm
+case thickness = 26mm
+
+Height of PCB: 307
+Air gap: 5mm (together)
+Height of case inside: 312
+Thickness of top & bottom: 5mm
+Height of case outside: 322
+
+PCB width: 115
+Air gap: 5mm (together)
+Width  of case inside: 120
+Thickness of sides: 12mm
+Width of case outside: 144
+

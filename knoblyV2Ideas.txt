@@ -1,0 +1,15 @@
+Knobly V2
+
+* Alt Air
+* Fuel left, right, center, cutoff
+* ADF Frequency
+* Separate Bat/Alt Master
+* Parking break
+* Flaps and Gear switch separate
+* Stronger detent single-axis encoder
+
+Unused switches
+* Carb heat
+* Flaps
+
+Modular autopilot section

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <executable name="dist/default/production\knobly2.X.production.hex">
+    <memory name="program">
+      <units>bytes</units>
+      <length>24576</length>
+      <used>5742</used>
+      <free>18834</free>
+    </memory>
+    <memory name="data">
+      <units>bytes</units>
+      <length>2048</length>
+      <used>159</used>
+      <free>1889</free>
+    </memory>
+  </executable>
+</project>
